@@ -1,0 +1,84 @@
+﻿@model CourseManagement.Models.User
+
+<script>
+    function getInputName() {
+        var inputed_text = document.getElementById('course_name');
+        $.ajax({
+            type: "POST",
+            url: '/Home/FindCourse',
+            data: {
+                course_name: inputed_text
+            },
+            dataType: 'json',
+            traditional: true,
+            success: function (response) {
+                window.location.href = response.redirectToUrl;
+            }
+        });
+    }
+</script>
+<nav class="menu-bar">
+    <ul>
+        <li style="margin-left:50px;"><a href="/Home/Index" id="home">Home</a></li>
+        <li><a href="/Course/AllCourses">All courses</a></li>
+        @if (User.Identity.IsAuthenticated)
+        {
+            if (!Model.IsAdmin)
+            {
+                <li><a href="/Course/MyCourses">My courses</a></li>
+                if (Model.isLecturer)
+                {
+                    <li><a href="/Course/CreateCourse">Create course</a></li>
+                }
+            }
+        }
+        @if (User.Identity.IsAuthenticated)
+        {
+            <li style="position:absolute; right: 250px;">
+                <div class="search-box">
+                    <input class="search-txt" type="text" name="course_name" id="course_name" placeholder="Search course">
+                    <a class="search-btn" href="javascript:getInputName();">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </li>
+            <li style="position:absolute; right:130px"><a href="/User/Account">Account</a></li>
+            <li style="position:absolute; right:20px"><a href="/User/Logout">Logout</a></li>
+        }
+        else
+        {
+            <li style="position:absolute; right: 235px;">
+                <div class="search-box">
+                    <input class="search-txt" type="text" name="course_name" id="course_name" placeholder="Search course">
+                    <a class="search-btn" href="javascript:getInputName();">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </li>
+            <li style="position:absolute; right: 140px"><a href="/User/Login">Login</a></li>
+            <li style="position:absolute; right: 20px"><a href="/User/Registration">Register</a></li>
+        }
+    </ul>
+</nav>
+
+@section Scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    @*<script>
+            function getInputName() {
+                var inputed_text = document.getElementById('course_name');
+                $.ajax({
+                    type: "POST",
+                    url: '/Home/FindCourse',
+                    data: {
+                        course_name: inputed_text
+                    },
+                    dataType: 'json',
+                    traditional: true,
+                    success: function (response) {
+                        window.location.href = response.redirectToUrl;
+                    }
+                });
+            }
+        </script>*@
+}

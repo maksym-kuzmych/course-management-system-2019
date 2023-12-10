@@ -1,0 +1,21 @@
+﻿@model CourseManagement.Models.Course
+
+@{
+    ViewBag.Title = "FindCourse";
+}
+
+@if (Model != null)
+{
+    <div class="course-preview" onclick="location.href = '/Course/ViewCourse/@Model.CourseId'">
+        <div class="course-photo">
+            <img src="@Model.Image" />
+        </div>
+        <div class="course-name">
+            @Model.Name
+        </div>
+    </div>
+}
+else
+{
+    <p>The search returned no results for "@ViewBag.CourseName"</p>
+}

@@ -1,0 +1,43 @@
+﻿@model List<CourseManagement.Models.User>
+
+@{
+    ViewBag.Title = "ViewSubscribers";
+}
+
+<div class="forms" style="margin-top: 25px;">
+    <h2 style="margin-top: 25px;">Subscribers of @ViewBag.CourseName course</h2>
+    @if (Model.Count == 0)
+    {
+        <div class="alert alert-info">
+            <strong>Oops!</strong> This course has no subscribers.
+        </div>
+    }
+    else
+    {
+        using (Html.BeginForm())
+        {
+            <div class="form-horizontal">
+                <center>
+                    <table border="1" style="font-size: 15px; width: 90%; border: solid 1px #70a1ff; margin-bottom: 30px;">
+                        <tr style="background: #70a1ff; color: #3742fa;">
+                            <th><center>Full Name</center></th>
+                            <th><center>Email</center></th>
+                            <th><center>Birth date</center></th>
+                        </tr>
+                        @for (int i = 0; i < Model.Count; i++)
+                        {
+                            if (i % 2 != 0)
+                            {
+                                <tr style="background: #bef7f0;"><td><center>@Html.EditorFor(m => Model[i].FullName)</center></td><td><center>@Html.EditorFor(m => Model[i].EmailId)</center></td><td><center>@Html.EditorFor(m =>Model[i].DateOfBirth)</center></td></tr>
+                            }
+                            else
+                            {
+                                <tr><td><center>@Html.EditorFor(m =>Model[i].FullName)</center></td><td><center>@Html.EditorFor(m =>Model[i].EmailId)</center></td><td><center>@Html.EditorFor(m =>Model[i].DateOfBirth)</center></td></tr>
+                            }
+                        }
+                    </table>
+                </center>
+            </div>
+        }
+    }
+</div>

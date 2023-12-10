@@ -1,0 +1,22 @@
+﻿@model CourseManagement.Models.Course
+
+@{
+    ViewBag.Title = "DeleteCourse";
+}
+
+<div class="forms" style="margin-top:25px;">
+    <h2 style="margin-top:25px;">Delete Course</h2>
+    <div class="form-horizontal">
+        <h3 style="text-align:center">Are you sure you want to delete this course?</h3>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.CourseId)
+            <div class="form-group" style="margin-left: 12%;">
+                <div class="col-md-offset-2 col-md-10">
+                    <input style="width: 60%;" type="submit" value="Delete course" class="btn btn-danger" />
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿@model List<CourseManagement.Models.Material>
+
+@{
+    ViewBag.Title = "DeleteMaterial";
+}
+
+<div class="forms" style="margin-top:25px;">
+    <h2 style="margin-top:25px;">Delete Materials</h2>
+    <div class="form-horizontal">
+        <h3 style="text-align:center">Are you sure you want to delete all lesson materials?</h3>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            for (int i = 0; i < Model.Count; i++)
+            {
+                @Html.HiddenFor(m => Model[i].MaterialId)
+                @Html.HiddenFor(m => Model[i].TopicId)
+            }
+            <div class="form-group" style="margin-left: 12%;">
+                <div class="col-md-offset-2 col-md-10">
+                    <input style="width: 60%;" type="submit" value="Delete materials" class="btn btn-danger" />
+                </div>
+            </div>
+        }
+    </div>
+</div>

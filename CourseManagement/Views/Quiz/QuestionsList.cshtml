@@ -1,0 +1,64 @@
+﻿@model List<CourseManagement.Models.Question>
+
+@{
+    ViewBag.Title = "QuestionsList";
+    var quizz_id = ViewBag.QuizId;
+}
+
+<div class="forms" style="margin-top:25px;">
+    <h2 style="margin-top:25px;">QuestionsList</h2>
+    <center>
+        <table border="1" style="font-size: 15px; width: 90%; border: solid 1px #70a1ff; margin-bottom: 20px;">
+            <tr style="background: #70a1ff; color: #3742fa;">
+                <th><center>№</center></th>
+                <th style="width: 60%;"><center>Question</center></th>
+                <th><center>Options</center></th>
+                <th><center>Actions</center></th>
+            </tr>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                if (i % 2 != 0)
+                {
+                    <tr style="background: #bef7f0;">
+                        <td><center>@(i + 1)</center></td>
+                        <td><center>@Model[i].Question1</center></td>
+                        <td><center>@*@Model[i].OptionsNumber*@</center></td>
+                        <td>
+                            <center>
+                                <a href="@Url.Action("AddQuestions", "Lecturer", new { quiz_id = Model[i].QuizId, question_id = Model[i].QuestionId})" class="btn btn-info">
+                                    Modify
+                                </a>
+                                <a href="@Url.Action("DeleteQuestion", "Lecturer", new {question_id = Model[i].QuestionId})" class="btn btn-danger">
+                                    Delete
+                                </a>
+                            </center>
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td><center>@(i + 1)</center></td>
+                        <td><center>@Model[i].Question1</center></td>
+                        <td><center>dsad</center></td>
+                        <td>
+                            <center>
+                                <center>
+                                    <a href="@Url.Action("AddQuestions", "Lecturer", new { quiz_id = Model[i].QuizId, question_id = Model[i].QuestionId})" class="btn btn-info">
+                                        Modify
+                                    </a>
+                                    <a href="@Url.Action("DeleteQuestion", "Lecturer", new {question_id = Model[i].QuestionId})" class="btn btn-danger">
+                                        Delete
+                                    </a>
+                                </center>
+                            </center>
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </center>
+    <a style="margin-left: 42%; margin-bottom: 20px;" href="@Url.Action("AddQuestions", "Lecturer", new { quiz_id = quizz_id })" class="btn btn-success">
+        Add question
+    </a>
+</div>

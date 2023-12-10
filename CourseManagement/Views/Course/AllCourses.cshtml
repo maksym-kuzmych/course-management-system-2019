@@ -1,0 +1,31 @@
+﻿@model List<CourseManagement.Models.Course>
+
+@{
+    ViewBag.Title = "AllCourses";
+}
+
+<center><h2>All Courses</h2></center>
+@if (Model.Count == 0)
+{
+    if (ViewBag.Status)
+    {
+        <p>Sorry, but course list is empty. If you want to create new course click @Html.ActionLink("here", "CreateCourse", "Course").</p>
+    }
+    else
+    {
+        <p>Sorry, but course list is empty =( </p>
+    }
+}
+else
+{
+    foreach (var item in Model)
+    {
+        <div class="course-preview" onclick="location.href = '/Course/ViewCourse/@item.CourseId'">     
+                <img src="@item.Image" class="course-photo"/>          
+                <div class="course-name overlay-fade">
+                    <div class="inner-title">@item.Name</div>
+                    <div class="inner-description">@item.Description</div>
+                </div>
+        </div>
+    }
+}

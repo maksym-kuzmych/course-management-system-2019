@@ -1,0 +1,2312 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@section Styles{
+    <link href="~/Content/HomePage.css" rel="stylesheet" type="text/css" />
+}
+
+@if (ViewBag.Name == "Admin.")
+{
+    <p style="margin-top: 30px;">
+        Welcome, @ViewBag.Name
+    </p>
+    <p>If you want to check user list click @Html.ActionLink("here", "Users", "Admin").</p>
+}
+else if (ViewBag.Name != null)
+{
+    <p style="margin-top: 30px;">
+        Welcome, @ViewBag.Status @ViewBag.Name
+    </p>
+}
+<div class="under_menu">
+    <a href="#">Learn</a>
+    <a href="#">Evolve</a>
+    <a href="#">Communicate</a>
+    <a href="#">Create</a>
+</div>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="~/Content/img/1 (1).jpg" alt="background" />
+        <div class="text">
+            Learn
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="~/Content/img/1 (2).jpg" alt="background" />
+        <div class="text">
+            Evolve
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="~/Content/img/1 (3).jpg" alt="background" />
+        <div class="text">
+            Create
+        </div>
+    </div>
+
+    <div class="dots-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+<div class="col-md-8 column">   
+    <div>
+        <table cellspacing="0" border="0" id="ctl00_MainContent_ArticleListing1_gvwArticles" style="border-collapse:collapse;">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl02_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1489">New C# 8 Features in Visual Studio 2019</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl02_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl02_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 4/2/2019
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1489" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 12843 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    This tutorial gives an overview of all the new features in C# 8 which can be tried out using Visual Studio 2019.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl02_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1489">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl03_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1476">The Absolutely Awesome Book on C# and .NET is Released</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl03_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Suprotim Agarwal">Suprotim Agarwal</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl03_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 2/2/2019
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1476" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">89</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">17</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 4009 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    The Absolutely Awesome Book on C# and .NET has released. Built around concepts, this concise 500 pages eBook is available in PDF, ePub (iPad) and Mobi (Kindle) and will help you build a solid foundation in C# and .NET. This book covers C# 6.0, C# 7.0, .NET Framework and .NET Core, with chapters that cover the latest developments to .NET and C# including .NET Standard and C# 8.0.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl03_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1476">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl04_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1472">Less commonly used C# operators</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl04_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl04_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 12/31/2018
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1472" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">111</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">21</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 6961 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    A tutorial on some less commonly used arithmetic, relational, logical, equality operators in C# and how to use them.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl04_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1472">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl05_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1471">Garbage Collection in C# (.NET Framework and .NET Core)</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl05_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl05_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 12/23/2018
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1471" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">190</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">27</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 10260 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    This C# tutorial explains how Garbage Collection works in .NET Framework and .NET Core, and some best practices to follow.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl05_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1471">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl06_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1466">How to Choose the Right .NET Collection Class?</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl06_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl06_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 11/25/2018
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1466" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">361</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">39</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 11118 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    The .NET framework Base Class Library contains many collection classes. This can make it difficult to decide when to use which. Grouping them together based on their properties can make the choice for a specific scenario, much easier.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl06_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1466">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl07_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1465">The Evolution of C#</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl07_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl07_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 10/22/2018
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1465" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">621</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">42</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 11145 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    Since its original release in 2002, C# has been regularly updated with new features. Today, we will look at the most important new features of each major language version and explore how the C# code we have been writing, has evolved through years.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl07_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1465">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl08_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1457">C# Sharding and Multithreading - Deep Dive</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl08_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Jeffrey Rennie">Jeffrey Rennie</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl08_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 8/26/2018
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1457" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">638</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">61</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 24174 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    Can database-style sharding improve the performance of a multi-threaded C# application? This tutorial talks about the performance bottlenecks in sophisticated C# concurrency operations and how sharding can solve these issues.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl08_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1457">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl09_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1455">Interview with the C# Boss - Mads Torgersen</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl09_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Suprotim Agarwal">Suprotim Agarwal</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl09_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 8/10/2018
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1455" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">244</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">36</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 14144 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    The DotNetCurry team had the opportunity to interview Mads Torgersen, C#’s Lead Language Designer, and find out what’s happening in C#, and where does it go from here.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl09_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1455">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl10_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1447">Dynamic Binding in C#</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl10_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl10_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 6/27/2018
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1447" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">485</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">35</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 41294 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    Dynamic binding in C# opens some possibilities which would not be available in a strictly strong typed language. This tutorial explores how C# supports dynamic binding.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl10_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1447">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl11_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1440">C# 8.0 – New Planned Features</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl11_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl11_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 5/26/2018
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1440" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">1009</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">89</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 78092 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    In this C# 8 tutorial, I am going to introduce a selection of currently planned features which will most probably end up in the final release. All of the C# 8 features are still early in development and are likely to change.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl11_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1440">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl12_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1437">C# 7.1, 7.2 and 7.3 - New Features (Updated)</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl12_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl12_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 5/14/2018
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1437" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">552</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">48</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 46927 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    C# 7 has added a number of new features to the language. This tutorial looks at the new features added to the minor versions of C# i.e. C# 7.1, 7.2 and and 7.3.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl12_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1437">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl13_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1417">How Well Do You Know C#?</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl13_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl13_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 2/5/2018
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1417" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">407</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">28</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">55</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 27733 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    Even developers with good C# skills write code that might behave unexpectedly sometimes. This article features several C# code snippets which fall into that category, and explains the reasons behind the surprising behavior.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl13_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1417">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl14_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1411">C#: Favorite Features through the Years</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl14_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=David Pine">David Pine</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl14_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 1/15/2018
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1411" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">516</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">59</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">68</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 25381 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    Each newer version of C# is packed full of powerful and impactful features. In this tutorial I walk through the various versions of C# and share my favorite features from each release.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl14_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1411">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl15_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1401">C# 7.1, 7.2 and 8 - New and Upcoming Features</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl15_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl15_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 11/22/2017
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1401" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">870</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">68</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">156</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 55746 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    Visual Studio 2017 15.3 update was a big milestone for C#. It was the release vehicle for C# 7.1 – the first minor version of C# 7. This article will take a closer look at its new features and the plans for future versions (C# 8) of the language.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl15_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1401">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl16_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1384">Functional Programming (F#) for C# Developers</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl16_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl16_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 8/21/2017
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1384" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">1644</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">34</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">35</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 45037 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    As a C# developer, you might already be writing some functional code without realizing it. This article describes some of the functional approaches you are already using in C#, as well as some improvements in C# 7 that make functional programming in it, easier.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl16_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1384">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl17_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1286">C# 7 - What's New</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl17_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl17_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 6/7/2017
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1286" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">1337</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">79</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">294</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 129743 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    C# 7 is the next version of C#. This article provides an overview of the new features in C# 7.0.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl17_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1286">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl18_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1031">DotNetCurry (DNC) .NET Magazine FAQ</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl18_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Suprotim Agarwal">Suprotim Agarwal</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl18_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 5/26/2017
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1031" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">67</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">11</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">0</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 22635 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    The DotNetCurry (DNC) Magazine is a Free bi-monthly .NET magazine. This post contains some frequently asked question and answers to enhance your reading experience.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl18_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1031">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl19_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1362">Understanding HashSet in C# with Examples</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl19_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Mahesh Sabnis">Mahesh Sabnis</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl19_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 4/28/2017
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1362" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">890</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">29</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">16</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 114183 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    The HashSet<t>
+                                        collection type was first introduced in C# v3 and with .NET 3.5. This article will explore features of Hashset and also  compare its performance with List.
+                                    </t>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl19_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1362">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl20_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1307">Asynchronous Programming in C# using Async Await –  Best Practices</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl20_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl20_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 9/17/2016
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1307" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">1493</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">32</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">44</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 134873 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    The async and await keywords in C# makes asynchronous programming simpler, however one can still use them incorrectly. This article highlights some common mistakes, and gives advice on how to avoid these mistakes.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl20_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1307">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl21_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1292">An Interview with Eric Lippert </a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl21_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Suprotim Agarwal">Suprotim Agarwal</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl21_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 7/7/2016
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1292" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">90</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">12</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">9</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 42192 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    We are thrilled to have Eric Lippert to talk to us once again in our 4th Anniversary edition of the DNC Magazine.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl21_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1292">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl22_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1291">Querying JSON using LINQ</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl22_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Mahesh Sabnis">Mahesh Sabnis</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl22_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 7/4/2016
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1291" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">551</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">11</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">14</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 53485 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    JSON.NET is a great framework for working with JSON data. We will perform JSON Serialization and Deserialization operations and query data using LINQ.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl22_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1291">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl23_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1281">Simple Intelligent Bot using Microsoft Bot Framework &amp; Cognitive Services</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl23_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Shoban Kumar">Shoban Kumar</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl23_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 5/9/2016
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1281" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">122</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">22</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">35</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 45361 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    Microsoft Bot Framework and Cognitive Services are Intelligent API offerings which that allow systems to see, hear, speak, understand and interpret our needs with natural communication
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl23_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1281">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl24_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1280">Test Your C# Basics</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl24_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Suprotim Agarwal">Suprotim Agarwal</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl24_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 5/3/2016
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1280" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">166</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">10</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">3</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 34113 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    Test your C# Basics around variables, types and operators. Post your answers in the comments section
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl24_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1280">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl25_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1279">Serializing JSON Data into Binary Form</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl25_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Mahesh Sabnis">Mahesh Sabnis</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl25_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 4/23/2016
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1279" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">18</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">8</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">4</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 21265 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    Using Netwonsoft.Json package to work with JSON Serialization and Deserialization operations
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl25_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1279">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl26_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1222">Upgrading Existing C# Code to C# 6.0</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl26_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Damir Arh">Damir Arh</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl26_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 12/15/2015
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1222" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">502</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">42</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">107</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 38524 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    C# 6.0 brings many small improvements to the language. However, does it make sense to upgrade your existing C# code base to take advantage of the new C# 6.0 features? Let us find out.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl26_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1222">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl27_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1193">C# Interview Question #1 – Different Types of Constructors in C#</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl27_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Pravinkumar Dabade">Pravinkumar Dabade</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl27_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 10/3/2015
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1193" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">17</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">7</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">0</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 61626 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    Different Types of Constructors in C# - Default, Parameterized, Copy, Static and Private. C# Interview Question No. 1
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl27_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1193">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl28_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1172">Code Contracts in C#</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl28_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Pravinkumar Dabade">Pravinkumar Dabade</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl28_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 8/27/2015
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1172" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop">130</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop">28</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop">3</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 55928 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    Code Contracts API includes classes for static and runtime checks of code and allows you to define preconditions, postconditions, and invariants within a method. The Contracts class is found in the System.Diagnostics namespace.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl28_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1172">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="articlebox">
+                            <div class="row">
+                                <div class="articletitle">
+                                    <h2 class="articlehead">
+                                        <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl29_lnkTitle" class="artid" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1042">C# 6.0 What's New</a>
+                                    </h2>
+
+
+
+                                    <b>Authored by: </b> <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl29_lblAddedBy" href="https://www.dotnetcurry.com/Author.aspx?AuthorName=Filip Ekberg">Filip Ekberg</a>
+                                    in <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl29_lnkCategory" href="https://www.dotnetcurry.com/BrowseArticles.aspx?CatID=55">C#</a>
+                                    on 9/22/2014
+
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articlestats">
+                                    <div class="stats1">
+
+
+
+                                        <div data-id="1042" class="socialshare">
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="fbsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                        <g>
+                                                        <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z"></path>
+                                    </g>
+                                </svg>
+                                                        <span class="twtsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a class="resp-sharing-button__link" target="_blank" aria-label="" rel="nofollow">
+                                                <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                                                    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"></path></svg>
+                                                        <span class="linkdinsharelinktop"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <span class="font-custom"><i class="fa fa-eye"></i> 125107 views </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="articleabstract">
+                                    <b>Abstract: </b>
+                                    C# 6.0 introduces a number of new features that will make it easier for developers to avoid boilerplate code. We also have a new compiler technology called "Roslyn" which allows us hook in” to the compiler and modify certain behavior as our programs compile.
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <a id="ctl00_MainContent_ArticleListing1_gvwArticles_ctl29_HyperLink1" class="readmore" href="https://www.dotnetcurry.com/ShowArticle.aspx?ID=1042">Read More ...</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+             
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/Content/js/main.js"></script>
+}

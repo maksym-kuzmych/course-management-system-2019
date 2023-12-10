@@ -1,0 +1,708 @@
+W:\CMSystem\CourseManagement\CourseManagement\bin\CourseManagement.dll.config
+W:\CMSystem\CourseManagement\CourseManagement\bin\CourseManagement.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\CourseManagement.pdb
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\csc.exe
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\csc.exe.config
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\csc.rsp
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\csi.exe
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\csi.exe.config
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\csi.rsp
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\Microsoft.Managed.Core.targets
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.AppContext.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Collections.Immutable.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Console.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.IO.Compression.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.IO.FileSystem.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.IO.Pipes.AccessControl.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.IO.Pipes.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Reflection.Metadata.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Security.AccessControl.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Security.Claims.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Security.Principal.Windows.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.ValueTuple.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Xml.XmlDocument.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Xml.XPath.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\vbc.exe
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\vbc.exe.config
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\vbc.rsp
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\VBCSCompiler.exe
+W:\CMSystem\CourseManagement\CourseManagement\bin\roslyn\VBCSCompiler.exe.config
+W:\CMSystem\CourseManagement\CourseManagement\bin\EntityFramework.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\EntityFramework.SqlServer.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\Microsoft.Web.Infrastructure.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Helpers.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Mvc.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Razor.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Webpages.Deployment.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Webpages.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Webpages.Razor.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\EntityFramework.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\EntityFramework.SqlServer.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Razor.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Webpages.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Webpages.Deployment.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Webpages.Razor.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Helpers.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Mvc.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\ru\EntityFramework.resources.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\ru\System.Web.Razor.resources.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\ru\System.Web.Webpages.resources.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\ru\System.Web.Webpages.Deployment.resources.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\ru\System.Web.Webpages.Razor.resources.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\ru\System.Web.Helpers.resources.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\ru\System.Web.Mvc.resources.dll
+W:\CMSystem\CourseManagement\CourseManagement\obj\Debug\CourseManagement.csproj.CoreCompileInputs.cache
+W:\CMSystem\CourseManagement\CourseManagement\obj\Debug\CourseManagement.csproj.CopyComplete
+W:\CMSystem\CourseManagement\CourseManagement\obj\Debug\CourseManagement.dll
+W:\CMSystem\CourseManagement\CourseManagement\obj\Debug\CourseManagement.pdb
+W:\CMSystem\CourseManagement\CourseManagement\bin\ru\EntityFramework.SqlServer.resources.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\Antlr3.Runtime.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\Newtonsoft.Json.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Optimization.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\WebGrease.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\Antlr3.Runtime.pdb
+W:\CMSystem\CourseManagement\CourseManagement\bin\Newtonsoft.Json.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Web.Optimization.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\CourseManagement.dll.config
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\CourseManagement.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\CourseManagement.pdb
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\csc.exe
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\csc.exe.config
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\csc.rsp
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\csi.exe
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\csi.exe.config
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\csi.rsp
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.AppContext.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Console.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.IO.Compression.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.IO.Pipes.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Security.Claims.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.ValueTuple.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Xml.XPath.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\vbc.exe
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\vbc.exe.config
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\vbc.rsp
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\Antlr3.Runtime.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\EntityFramework.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\EntityFramework.SqlServer.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\Newtonsoft.Json.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Helpers.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Mvc.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Optimization.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Razor.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Webpages.Deployment.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Webpages.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Webpages.Razor.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\WebGrease.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\Antlr3.Runtime.pdb
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\EntityFramework.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\EntityFramework.SqlServer.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\Newtonsoft.Json.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Optimization.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Razor.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Webpages.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Webpages.Deployment.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Webpages.Razor.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Helpers.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\System.Web.Mvc.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\ru\EntityFramework.resources.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\ru\System.Web.Razor.resources.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\ru\System.Web.Webpages.resources.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\ru\System.Web.Webpages.Deployment.resources.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\ru\System.Web.Webpages.Razor.resources.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\obj\Debug\CourseManagement.csprojAssemblyReference.cache
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\obj\Debug\CourseManagement.csproj.CoreCompileInputs.cache
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\obj\Debug\CourseManagement.csproj.CopyComplete
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\obj\Debug\CourseManagement.dll
+C:\Users\InGuilty\Desktop\CourseManagement\CourseManagement\obj\Debug\CourseManagement.pdb
+W:\CMSystem\CourseManagement\CourseManagement\bin\Microsoft.Win32.Primitives.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\netstandard.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.AppContext.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Collections.Concurrent.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Collections.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Collections.NonGeneric.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Collections.Specialized.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.ComponentModel.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.ComponentModel.EventBasedAsync.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.ComponentModel.Primitives.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.ComponentModel.TypeConverter.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Console.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Data.Common.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Diagnostics.Contracts.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Diagnostics.Debug.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Diagnostics.FileVersionInfo.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Diagnostics.Process.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Diagnostics.StackTrace.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Diagnostics.TextWriterTraceListener.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Diagnostics.Tools.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Diagnostics.TraceSource.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Diagnostics.Tracing.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Drawing.Primitives.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Dynamic.Runtime.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Globalization.Calendars.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Globalization.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Globalization.Extensions.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.IO.Compression.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.IO.Compression.ZipFile.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.IO.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.IO.FileSystem.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.IO.FileSystem.DriveInfo.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.IO.FileSystem.Primitives.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.IO.FileSystem.Watcher.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.IO.IsolatedStorage.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.IO.MemoryMappedFiles.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.IO.Pipes.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.IO.UnmanagedMemoryStream.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Linq.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Linq.Expressions.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Linq.Parallel.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Linq.Queryable.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Net.Http.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Net.NameResolution.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Net.NetworkInformation.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Net.Ping.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Net.Primitives.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Net.Requests.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Net.Security.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Net.Sockets.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Net.WebHeaderCollection.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Net.WebSockets.Client.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Net.WebSockets.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.ObjectModel.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Reflection.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Reflection.Extensions.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Reflection.Primitives.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Resources.Reader.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Resources.ResourceManager.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Resources.Writer.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.CompilerServices.VisualC.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.Extensions.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.Handles.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.InteropServices.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.Numerics.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.Serialization.Formatters.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.Serialization.Json.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.Serialization.Primitives.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.Serialization.Xml.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Security.Claims.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Security.Cryptography.Algorithms.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Security.Cryptography.Csp.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Security.Cryptography.Encoding.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Security.Cryptography.Primitives.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Security.Cryptography.X509Certificates.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Security.Principal.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Security.SecureString.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Text.Encoding.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Text.Encoding.Extensions.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Text.RegularExpressions.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Threading.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Threading.Overlapped.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Threading.Tasks.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Threading.Tasks.Parallel.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Threading.Thread.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Threading.ThreadPool.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Threading.Timer.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.ValueTuple.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Xml.ReaderWriter.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Xml.XDocument.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Xml.XmlDocument.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Xml.XmlSerializer.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Xml.XPath.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Xml.XPath.XDocument.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\Carbon.Data.Protection.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\Carbon.Json.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\Carbon.Packaging.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\Carbon.Storage.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\Carbon.VersionControl.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\Carbon.Versioning.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\GitHub.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Buffers.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Memory.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Numerics.Vectors.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.CompilerServices.Unsafe.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Text.Encodings.Web.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Threading.Tasks.Extensions.dll
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Buffers.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Memory.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Numerics.Vectors.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Runtime.CompilerServices.Unsafe.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Text.Encodings.Web.xml
+W:\CMSystem\CourseManagement\CourseManagement\bin\System.Threading.Tasks.Extensions.xml
+W:\CMSystem\CourseManagement\CourseManagement\obj\Debug\CourseManagement.csprojAssemblyReference.cache
+W:\Course management system\CourseManagement\bin\CourseManagement.dll.config
+W:\Course management system\CourseManagement\bin\CourseManagement.dll
+W:\Course management system\CourseManagement\bin\CourseManagement.pdb
+W:\Course management system\CourseManagement\bin\roslyn\csc.exe
+W:\Course management system\CourseManagement\bin\roslyn\csc.exe.config
+W:\Course management system\CourseManagement\bin\roslyn\csc.rsp
+W:\Course management system\CourseManagement\bin\roslyn\csi.exe
+W:\Course management system\CourseManagement\bin\roslyn\csi.exe.config
+W:\Course management system\CourseManagement\bin\roslyn\csi.rsp
+W:\Course management system\CourseManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+W:\Course management system\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+W:\Course management system\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+W:\Course management system\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+W:\Course management system\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+W:\Course management system\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+W:\Course management system\CourseManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+W:\Course management system\CourseManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+W:\Course management system\CourseManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+W:\Course management system\CourseManagement\bin\roslyn\Microsoft.Managed.Core.targets
+W:\Course management system\CourseManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+W:\Course management system\CourseManagement\bin\roslyn\System.AppContext.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Collections.Immutable.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Console.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.IO.Compression.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.IO.FileSystem.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.IO.Pipes.AccessControl.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.IO.Pipes.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Reflection.Metadata.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Security.AccessControl.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Security.Claims.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Security.Principal.Windows.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.ValueTuple.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Xml.XmlDocument.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Xml.XPath.dll
+W:\Course management system\CourseManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+W:\Course management system\CourseManagement\bin\roslyn\vbc.exe
+W:\Course management system\CourseManagement\bin\roslyn\vbc.exe.config
+W:\Course management system\CourseManagement\bin\roslyn\vbc.rsp
+W:\Course management system\CourseManagement\bin\roslyn\VBCSCompiler.exe
+W:\Course management system\CourseManagement\bin\roslyn\VBCSCompiler.exe.config
+W:\Course management system\CourseManagement\bin\Microsoft.Win32.Primitives.dll
+W:\Course management system\CourseManagement\bin\netstandard.dll
+W:\Course management system\CourseManagement\bin\System.AppContext.dll
+W:\Course management system\CourseManagement\bin\System.Collections.Concurrent.dll
+W:\Course management system\CourseManagement\bin\System.Collections.dll
+W:\Course management system\CourseManagement\bin\System.Collections.NonGeneric.dll
+W:\Course management system\CourseManagement\bin\System.Collections.Specialized.dll
+W:\Course management system\CourseManagement\bin\System.ComponentModel.dll
+W:\Course management system\CourseManagement\bin\System.ComponentModel.EventBasedAsync.dll
+W:\Course management system\CourseManagement\bin\System.ComponentModel.Primitives.dll
+W:\Course management system\CourseManagement\bin\System.ComponentModel.TypeConverter.dll
+W:\Course management system\CourseManagement\bin\System.Console.dll
+W:\Course management system\CourseManagement\bin\System.Data.Common.dll
+W:\Course management system\CourseManagement\bin\System.Diagnostics.Contracts.dll
+W:\Course management system\CourseManagement\bin\System.Diagnostics.Debug.dll
+W:\Course management system\CourseManagement\bin\System.Diagnostics.FileVersionInfo.dll
+W:\Course management system\CourseManagement\bin\System.Diagnostics.Process.dll
+W:\Course management system\CourseManagement\bin\System.Diagnostics.StackTrace.dll
+W:\Course management system\CourseManagement\bin\System.Diagnostics.TextWriterTraceListener.dll
+W:\Course management system\CourseManagement\bin\System.Diagnostics.Tools.dll
+W:\Course management system\CourseManagement\bin\System.Diagnostics.TraceSource.dll
+W:\Course management system\CourseManagement\bin\System.Diagnostics.Tracing.dll
+W:\Course management system\CourseManagement\bin\System.Drawing.Primitives.dll
+W:\Course management system\CourseManagement\bin\System.Dynamic.Runtime.dll
+W:\Course management system\CourseManagement\bin\System.Globalization.Calendars.dll
+W:\Course management system\CourseManagement\bin\System.Globalization.dll
+W:\Course management system\CourseManagement\bin\System.Globalization.Extensions.dll
+W:\Course management system\CourseManagement\bin\System.IO.Compression.dll
+W:\Course management system\CourseManagement\bin\System.IO.Compression.ZipFile.dll
+W:\Course management system\CourseManagement\bin\System.IO.dll
+W:\Course management system\CourseManagement\bin\System.IO.FileSystem.dll
+W:\Course management system\CourseManagement\bin\System.IO.FileSystem.DriveInfo.dll
+W:\Course management system\CourseManagement\bin\System.IO.FileSystem.Primitives.dll
+W:\Course management system\CourseManagement\bin\System.IO.FileSystem.Watcher.dll
+W:\Course management system\CourseManagement\bin\System.IO.IsolatedStorage.dll
+W:\Course management system\CourseManagement\bin\System.IO.MemoryMappedFiles.dll
+W:\Course management system\CourseManagement\bin\System.IO.Pipes.dll
+W:\Course management system\CourseManagement\bin\System.IO.UnmanagedMemoryStream.dll
+W:\Course management system\CourseManagement\bin\System.Linq.dll
+W:\Course management system\CourseManagement\bin\System.Linq.Expressions.dll
+W:\Course management system\CourseManagement\bin\System.Linq.Parallel.dll
+W:\Course management system\CourseManagement\bin\System.Linq.Queryable.dll
+W:\Course management system\CourseManagement\bin\System.Net.Http.dll
+W:\Course management system\CourseManagement\bin\System.Net.NameResolution.dll
+W:\Course management system\CourseManagement\bin\System.Net.NetworkInformation.dll
+W:\Course management system\CourseManagement\bin\System.Net.Ping.dll
+W:\Course management system\CourseManagement\bin\System.Net.Primitives.dll
+W:\Course management system\CourseManagement\bin\System.Net.Requests.dll
+W:\Course management system\CourseManagement\bin\System.Net.Security.dll
+W:\Course management system\CourseManagement\bin\System.Net.Sockets.dll
+W:\Course management system\CourseManagement\bin\System.Net.WebHeaderCollection.dll
+W:\Course management system\CourseManagement\bin\System.Net.WebSockets.Client.dll
+W:\Course management system\CourseManagement\bin\System.Net.WebSockets.dll
+W:\Course management system\CourseManagement\bin\System.ObjectModel.dll
+W:\Course management system\CourseManagement\bin\System.Reflection.dll
+W:\Course management system\CourseManagement\bin\System.Reflection.Extensions.dll
+W:\Course management system\CourseManagement\bin\System.Reflection.Primitives.dll
+W:\Course management system\CourseManagement\bin\System.Resources.Reader.dll
+W:\Course management system\CourseManagement\bin\System.Resources.ResourceManager.dll
+W:\Course management system\CourseManagement\bin\System.Resources.Writer.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.CompilerServices.VisualC.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.Extensions.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.Handles.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.InteropServices.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.Numerics.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.Serialization.Formatters.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.Serialization.Json.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.Serialization.Primitives.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.Serialization.Xml.dll
+W:\Course management system\CourseManagement\bin\System.Security.Claims.dll
+W:\Course management system\CourseManagement\bin\System.Security.Cryptography.Algorithms.dll
+W:\Course management system\CourseManagement\bin\System.Security.Cryptography.Csp.dll
+W:\Course management system\CourseManagement\bin\System.Security.Cryptography.Encoding.dll
+W:\Course management system\CourseManagement\bin\System.Security.Cryptography.Primitives.dll
+W:\Course management system\CourseManagement\bin\System.Security.Cryptography.X509Certificates.dll
+W:\Course management system\CourseManagement\bin\System.Security.Principal.dll
+W:\Course management system\CourseManagement\bin\System.Security.SecureString.dll
+W:\Course management system\CourseManagement\bin\System.Text.Encoding.dll
+W:\Course management system\CourseManagement\bin\System.Text.Encoding.Extensions.dll
+W:\Course management system\CourseManagement\bin\System.Text.RegularExpressions.dll
+W:\Course management system\CourseManagement\bin\System.Threading.dll
+W:\Course management system\CourseManagement\bin\System.Threading.Overlapped.dll
+W:\Course management system\CourseManagement\bin\System.Threading.Tasks.dll
+W:\Course management system\CourseManagement\bin\System.Threading.Tasks.Parallel.dll
+W:\Course management system\CourseManagement\bin\System.Threading.Thread.dll
+W:\Course management system\CourseManagement\bin\System.Threading.ThreadPool.dll
+W:\Course management system\CourseManagement\bin\System.Threading.Timer.dll
+W:\Course management system\CourseManagement\bin\System.ValueTuple.dll
+W:\Course management system\CourseManagement\bin\System.Xml.ReaderWriter.dll
+W:\Course management system\CourseManagement\bin\System.Xml.XDocument.dll
+W:\Course management system\CourseManagement\bin\System.Xml.XmlDocument.dll
+W:\Course management system\CourseManagement\bin\System.Xml.XmlSerializer.dll
+W:\Course management system\CourseManagement\bin\System.Xml.XPath.dll
+W:\Course management system\CourseManagement\bin\System.Xml.XPath.XDocument.dll
+W:\Course management system\CourseManagement\bin\Antlr3.Runtime.dll
+W:\Course management system\CourseManagement\bin\Carbon.Data.Protection.dll
+W:\Course management system\CourseManagement\bin\Carbon.Json.dll
+W:\Course management system\CourseManagement\bin\Carbon.Packaging.dll
+W:\Course management system\CourseManagement\bin\Carbon.Storage.dll
+W:\Course management system\CourseManagement\bin\Carbon.VersionControl.dll
+W:\Course management system\CourseManagement\bin\Carbon.Versioning.dll
+W:\Course management system\CourseManagement\bin\EntityFramework.dll
+W:\Course management system\CourseManagement\bin\EntityFramework.SqlServer.dll
+W:\Course management system\CourseManagement\bin\GitHub.dll
+W:\Course management system\CourseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+W:\Course management system\CourseManagement\bin\Microsoft.Web.Infrastructure.dll
+W:\Course management system\CourseManagement\bin\Newtonsoft.Json.dll
+W:\Course management system\CourseManagement\bin\System.Buffers.dll
+W:\Course management system\CourseManagement\bin\System.Memory.dll
+W:\Course management system\CourseManagement\bin\System.Numerics.Vectors.dll
+W:\Course management system\CourseManagement\bin\System.Runtime.CompilerServices.Unsafe.dll
+W:\Course management system\CourseManagement\bin\System.Text.Encodings.Web.dll
+W:\Course management system\CourseManagement\bin\System.Threading.Tasks.Extensions.dll
+W:\Course management system\CourseManagement\bin\System.Web.Helpers.dll
+W:\Course management system\CourseManagement\bin\System.Web.Mvc.dll
+W:\Course management system\CourseManagement\bin\System.Web.Optimization.dll
+W:\Course management system\CourseManagement\bin\System.Web.Razor.dll
+W:\Course management system\CourseManagement\bin\System.Web.Webpages.Deployment.dll
+W:\Course management system\CourseManagement\bin\System.Web.Webpages.dll
+W:\Course management system\CourseManagement\bin\System.Web.Webpages.Razor.dll
+W:\Course management system\CourseManagement\bin\WebGrease.dll
+W:\Course management system\CourseManagement\bin\Antlr3.Runtime.pdb
+W:\Course management system\CourseManagement\bin\EntityFramework.xml
+W:\Course management system\CourseManagement\bin\EntityFramework.SqlServer.xml
+W:\Course management system\CourseManagement\bin\Newtonsoft.Json.xml
+W:\Course management system\CourseManagement\bin\System.Buffers.xml
+W:\Course management system\CourseManagement\bin\System.Memory.xml
+W:\Course management system\CourseManagement\bin\System.Numerics.Vectors.xml
+W:\Course management system\CourseManagement\bin\System.Runtime.CompilerServices.Unsafe.xml
+W:\Course management system\CourseManagement\bin\System.Text.Encodings.Web.xml
+W:\Course management system\CourseManagement\bin\System.Threading.Tasks.Extensions.xml
+W:\Course management system\CourseManagement\bin\System.Web.Optimization.xml
+W:\Course management system\CourseManagement\bin\System.Web.Razor.xml
+W:\Course management system\CourseManagement\bin\System.Web.Webpages.xml
+W:\Course management system\CourseManagement\bin\System.Web.Webpages.Deployment.xml
+W:\Course management system\CourseManagement\bin\System.Web.Webpages.Razor.xml
+W:\Course management system\CourseManagement\bin\System.Web.Helpers.xml
+W:\Course management system\CourseManagement\bin\System.Web.Mvc.xml
+W:\Course management system\CourseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+W:\Course management system\CourseManagement\bin\ru\EntityFramework.resources.dll
+W:\Course management system\CourseManagement\bin\ru\EntityFramework.SqlServer.resources.dll
+W:\Course management system\CourseManagement\bin\ru\System.Web.Razor.resources.dll
+W:\Course management system\CourseManagement\bin\ru\System.Web.Webpages.resources.dll
+W:\Course management system\CourseManagement\bin\ru\System.Web.Webpages.Deployment.resources.dll
+W:\Course management system\CourseManagement\bin\ru\System.Web.Webpages.Razor.resources.dll
+W:\Course management system\CourseManagement\bin\ru\System.Web.Helpers.resources.dll
+W:\Course management system\CourseManagement\bin\ru\System.Web.Mvc.resources.dll
+W:\Course management system\CourseManagement\obj\Debug\CourseManagement.csprojAssemblyReference.cache
+W:\Course management system\CourseManagement\obj\Debug\CourseManagement.csproj.CoreCompileInputs.cache
+W:\Course management system\CourseManagement\obj\Debug\CourseManagement.csproj.CopyComplete
+W:\Course management system\CourseManagement\obj\Debug\CourseManagement.dll
+W:\Course management system\CourseManagement\obj\Debug\CourseManagement.pdb
+D:\универ\Course management system\CourseManagement\bin\CourseManagement.dll.config
+D:\универ\Course management system\CourseManagement\bin\CourseManagement.dll
+D:\универ\Course management system\CourseManagement\bin\CourseManagement.pdb
+D:\универ\Course management system\CourseManagement\bin\roslyn\csc.exe
+D:\универ\Course management system\CourseManagement\bin\roslyn\csc.exe.config
+D:\универ\Course management system\CourseManagement\bin\roslyn\csc.rsp
+D:\универ\Course management system\CourseManagement\bin\roslyn\csi.exe
+D:\универ\Course management system\CourseManagement\bin\roslyn\csi.exe.config
+D:\универ\Course management system\CourseManagement\bin\roslyn\csi.rsp
+D:\универ\Course management system\CourseManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\универ\Course management system\CourseManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\Microsoft.Managed.Core.targets
+D:\универ\Course management system\CourseManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.AppContext.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Collections.Immutable.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Console.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.IO.Compression.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.IO.FileSystem.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.IO.Pipes.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Reflection.Metadata.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Security.AccessControl.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Security.Claims.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Security.Principal.Windows.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.ValueTuple.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Xml.XmlDocument.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Xml.XPath.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\универ\Course management system\CourseManagement\bin\roslyn\vbc.exe
+D:\универ\Course management system\CourseManagement\bin\roslyn\vbc.exe.config
+D:\универ\Course management system\CourseManagement\bin\roslyn\vbc.rsp
+D:\универ\Course management system\CourseManagement\bin\roslyn\VBCSCompiler.exe
+D:\универ\Course management system\CourseManagement\bin\roslyn\VBCSCompiler.exe.config
+D:\универ\Course management system\CourseManagement\bin\Antlr3.Runtime.dll
+D:\универ\Course management system\CourseManagement\bin\Carbon.Data.Protection.dll
+D:\универ\Course management system\CourseManagement\bin\Carbon.Json.dll
+D:\универ\Course management system\CourseManagement\bin\Carbon.Packaging.dll
+D:\универ\Course management system\CourseManagement\bin\Carbon.Storage.dll
+D:\универ\Course management system\CourseManagement\bin\Carbon.VersionControl.dll
+D:\универ\Course management system\CourseManagement\bin\Carbon.Versioning.dll
+D:\универ\Course management system\CourseManagement\bin\EntityFramework.dll
+D:\универ\Course management system\CourseManagement\bin\EntityFramework.SqlServer.dll
+D:\универ\Course management system\CourseManagement\bin\GitHub.dll
+D:\универ\Course management system\CourseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\универ\Course management system\CourseManagement\bin\Microsoft.Web.Infrastructure.dll
+D:\универ\Course management system\CourseManagement\bin\Newtonsoft.Json.dll
+D:\универ\Course management system\CourseManagement\bin\System.Buffers.dll
+D:\универ\Course management system\CourseManagement\bin\System.Memory.dll
+D:\универ\Course management system\CourseManagement\bin\System.Numerics.Vectors.dll
+D:\универ\Course management system\CourseManagement\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\универ\Course management system\CourseManagement\bin\System.Text.Encodings.Web.dll
+D:\универ\Course management system\CourseManagement\bin\System.Threading.Tasks.Extensions.dll
+D:\универ\Course management system\CourseManagement\bin\System.Web.Helpers.dll
+D:\универ\Course management system\CourseManagement\bin\System.Web.Mvc.dll
+D:\универ\Course management system\CourseManagement\bin\System.Web.Optimization.dll
+D:\универ\Course management system\CourseManagement\bin\System.Web.Razor.dll
+D:\универ\Course management system\CourseManagement\bin\System.Web.Webpages.Deployment.dll
+D:\универ\Course management system\CourseManagement\bin\System.Web.Webpages.dll
+D:\универ\Course management system\CourseManagement\bin\System.Web.Webpages.Razor.dll
+D:\универ\Course management system\CourseManagement\bin\WebGrease.dll
+D:\универ\Course management system\CourseManagement\bin\Antlr3.Runtime.pdb
+D:\универ\Course management system\CourseManagement\bin\EntityFramework.xml
+D:\универ\Course management system\CourseManagement\bin\EntityFramework.SqlServer.xml
+D:\универ\Course management system\CourseManagement\bin\Newtonsoft.Json.xml
+D:\универ\Course management system\CourseManagement\bin\System.Buffers.xml
+D:\универ\Course management system\CourseManagement\bin\System.Memory.xml
+D:\универ\Course management system\CourseManagement\bin\System.Numerics.Vectors.xml
+D:\универ\Course management system\CourseManagement\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\универ\Course management system\CourseManagement\bin\System.Text.Encodings.Web.xml
+D:\универ\Course management system\CourseManagement\bin\System.Threading.Tasks.Extensions.xml
+D:\универ\Course management system\CourseManagement\bin\System.Web.Optimization.xml
+D:\универ\Course management system\CourseManagement\bin\System.Web.Razor.xml
+D:\универ\Course management system\CourseManagement\bin\System.Web.Webpages.xml
+D:\универ\Course management system\CourseManagement\bin\System.Web.Webpages.Deployment.xml
+D:\универ\Course management system\CourseManagement\bin\System.Web.Webpages.Razor.xml
+D:\универ\Course management system\CourseManagement\bin\System.Web.Helpers.xml
+D:\универ\Course management system\CourseManagement\bin\System.Web.Mvc.xml
+D:\универ\Course management system\CourseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\универ\Course management system\CourseManagement\bin\ru\EntityFramework.resources.dll
+D:\универ\Course management system\CourseManagement\bin\ru\EntityFramework.SqlServer.resources.dll
+D:\универ\Course management system\CourseManagement\bin\ru\System.Web.Razor.resources.dll
+D:\универ\Course management system\CourseManagement\bin\ru\System.Web.Webpages.resources.dll
+D:\универ\Course management system\CourseManagement\bin\ru\System.Web.Webpages.Deployment.resources.dll
+D:\универ\Course management system\CourseManagement\bin\ru\System.Web.Webpages.Razor.resources.dll
+D:\универ\Course management system\CourseManagement\bin\ru\System.Web.Helpers.resources.dll
+D:\универ\Course management system\CourseManagement\bin\ru\System.Web.Mvc.resources.dll
+D:\универ\Course management system\CourseManagement\obj\Debug\CourseManagement.csproj.AssemblyReference.cache
+D:\универ\Course management system\CourseManagement\obj\Debug\CourseManagement.csproj.CoreCompileInputs.cache
+D:\универ\Course management system\CourseManagement\obj\Debug\CourseManagement.csproj.CopyComplete
+D:\универ\Course management system\CourseManagement\obj\Debug\CourseManagement.dll
+D:\универ\Course management system\CourseManagement\obj\Debug\CourseManagement.pdb
+D:\my-git\course-management-system-2019\CourseManagement\bin\CourseManagement.dll.config
+D:\my-git\course-management-system-2019\CourseManagement\bin\CourseManagement.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\CourseManagement.pdb
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\csc.exe
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\csc.exe.config
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\csc.rsp
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\csi.exe
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\csi.exe.config
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\csi.rsp
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\Microsoft.Managed.Core.targets
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.AppContext.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Collections.Immutable.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Console.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.IO.Compression.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.IO.FileSystem.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.IO.Pipes.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Reflection.Metadata.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Security.AccessControl.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Security.Claims.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Security.Principal.Windows.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.ValueTuple.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Xml.XmlDocument.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Xml.XPath.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\vbc.exe
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\vbc.exe.config
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\vbc.rsp
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\VBCSCompiler.exe
+D:\my-git\course-management-system-2019\CourseManagement\bin\roslyn\VBCSCompiler.exe.config
+D:\my-git\course-management-system-2019\CourseManagement\bin\Antlr3.Runtime.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\Carbon.Data.Protection.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\Carbon.Json.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\Carbon.Packaging.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\Carbon.Storage.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\Carbon.VersionControl.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\Carbon.Versioning.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\EntityFramework.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\EntityFramework.SqlServer.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\GitHub.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\Microsoft.Web.Infrastructure.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\Newtonsoft.Json.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Buffers.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Memory.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Numerics.Vectors.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Text.Encodings.Web.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Threading.Tasks.Extensions.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Helpers.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Mvc.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Optimization.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Razor.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Webpages.Deployment.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Webpages.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Webpages.Razor.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\WebGrease.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\Antlr3.Runtime.pdb
+D:\my-git\course-management-system-2019\CourseManagement\bin\EntityFramework.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\EntityFramework.SqlServer.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\Newtonsoft.Json.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Buffers.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Memory.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Numerics.Vectors.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Text.Encodings.Web.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Threading.Tasks.Extensions.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Optimization.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Razor.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Webpages.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Webpages.Deployment.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Webpages.Razor.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Helpers.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\System.Web.Mvc.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\my-git\course-management-system-2019\CourseManagement\bin\ru\EntityFramework.resources.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\ru\EntityFramework.SqlServer.resources.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\ru\System.Web.Razor.resources.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\ru\System.Web.Webpages.resources.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\ru\System.Web.Webpages.Deployment.resources.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\ru\System.Web.Webpages.Razor.resources.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\ru\System.Web.Helpers.resources.dll
+D:\my-git\course-management-system-2019\CourseManagement\bin\ru\System.Web.Mvc.resources.dll
+D:\my-git\course-management-system-2019\CourseManagement\obj\Debug\CourseManagement.csproj.AssemblyReference.cache
+D:\my-git\course-management-system-2019\CourseManagement\obj\Debug\CourseManagement.csproj.CoreCompileInputs.cache
+D:\my-git\course-management-system-2019\CourseManagement\obj\Debug\CourseManagement.csproj.CopyComplete
+D:\my-git\course-management-system-2019\CourseManagement\obj\Debug\CourseManagement.dll
+D:\my-git\course-management-system-2019\CourseManagement\obj\Debug\CourseManagement.pdb

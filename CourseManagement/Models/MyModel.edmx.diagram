@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2f47280edd5d48219555ff721dcba7f6" Name="Diagram1" ZoomLevel="94">
+        <EntityTypeShape EntityType="MyDatabaseModel.Answer" Width="1.5" PointX="9.75" PointY="17.25" />
+        <EntityTypeShape EntityType="MyDatabaseModel.Course" Width="1.5" PointX="0.75" PointY="7.125" />
+        <EntityTypeShape EntityType="MyDatabaseModel.CreatedCourse" Width="1.5" PointX="3" PointY="10.375" />
+        <EntityTypeShape EntityType="MyDatabaseModel.Material" Width="1.5" PointX="5.25" PointY="14.375" />
+        <EntityTypeShape EntityType="MyDatabaseModel.Question" Width="1.5" PointX="7.5" PointY="17.25" />
+        <EntityTypeShape EntityType="MyDatabaseModel.Quiz" Width="1.5" PointX="5.25" PointY="17.125" />
+        <EntityTypeShape EntityType="MyDatabaseModel.SubscribedCours" Width="1.5" PointX="3" PointY="4.375" />
+        <EntityTypeShape EntityType="MyDatabaseModel.Topic" Width="1.5" PointX="3" PointY="15.875" />
+        <EntityTypeShape EntityType="MyDatabaseModel.User" Width="1.5" PointX="0.75" PointY="1.5" />
+        <AssociationConnector Association="MyDatabaseModel.FK__Answers__Questio__55BFB948" />
+        <AssociationConnector Association="MyDatabaseModel.FK__CreatedCo__Cours__1CBC4616" />
+        <AssociationConnector Association="MyDatabaseModel.FK__Subscribe__Cours__160F4887" />
+        <AssociationConnector Association="MyDatabaseModel.FK__Topic__CourseId__14270015" />
+        <AssociationConnector Association="MyDatabaseModel.FK__CreatedCo__UserI__1BC821DD" />
+        <AssociationConnector Association="MyDatabaseModel.FK__Material__TopicI__1AD3FDA4" />
+        <AssociationConnector Association="MyDatabaseModel.FK__Questions__QuizI__1F2E9E6D" />
+        <AssociationConnector Association="MyDatabaseModel.FK__Quiz__TopicId__18EBB532" />
+        <AssociationConnector Association="MyDatabaseModel.FK__Subscribe__UserI__151B244E" />
+        <EntityTypeShape EntityType="MyDatabaseModel.StudentProgress" Width="1.5" PointX="7.5" PointY="9.375" />
+        <AssociationConnector Association="MyDatabaseModel.FK__StudentPr__Cours__436BFEE3" />
+        <AssociationConnector Association="MyDatabaseModel.FK__StudentPr__QuizI__4460231C" />
+        <AssociationConnector Association="MyDatabaseModel.FK__StudentPr__Stude__4277DAAA" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

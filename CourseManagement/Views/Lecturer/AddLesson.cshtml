@@ -1,0 +1,39 @@
+﻿@model CourseManagement.Models.Topic
+
+@{
+    ViewBag.Title = "AddLesson";
+}
+
+<div class="forms" style="margin-top:25px;">
+    <h2 style="margin-top:25px;">Add lesson</h2>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m => m.TopicNumber)
+        <div class="form-horizontal">
+            @Html.HiddenFor(m => m.CourseId)
+            <div class="form-group">
+                <label style="margin-left: 30px;" for="Name" class="col-md-12">Lesson name:</label>
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fas fa-font"></i>
+                        </span>
+                        @Html.EditorFor(model => model.Name)
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Name)
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-left: 12%;">
+                <div class="col-md-offset-2 col-md-10">
+                    <input style="width: 60%;" type="submit" value="Add lesson" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+@section Scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}

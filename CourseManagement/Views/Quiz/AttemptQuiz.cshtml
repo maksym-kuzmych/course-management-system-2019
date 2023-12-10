@@ -1,0 +1,25 @@
+﻿@model CourseManagement.Models.Quiz
+
+@{
+    ViewBag.Title = "AttemptQuiz";
+}
+
+<div class="forms" style="margin-top:25px;">
+    <h2 style="margin-top:25px;">@Model.Name</h2>
+    <div class="form-horizontal">
+        <h3 style="text-align:center">Be careful and good luck!</h3>
+        <h3 style="text-align:center">Questions count: @ViewBag.QuestionsCount </h3>
+        <h3 style="text-align:center">Test duration: @Model.DurationInMinutes</h3>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.QuizId)
+            <div class="form-group" style="margin-left: 12%;">
+                <div class="col-md-offset-2 col-md-10">
+                    <input style="width: 60%;" type="submit" value="Start quiz" class="btn btn-success" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

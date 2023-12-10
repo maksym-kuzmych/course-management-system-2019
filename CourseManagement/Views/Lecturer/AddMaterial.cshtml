@@ -1,0 +1,24 @@
+﻿@model CourseManagement.Models.Material
+
+@{
+    ViewBag.Title = "AddMaterial";
+}
+
+<div class="forms" style="margin-top:25px;">
+    <h2 style="margin-top:25px;">Add material(s)</h2>
+    @using (Html.BeginForm("AddMaterial", "Lecturer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m => m.TopicId)
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true)
+            <input type="file" name="MaterialsObj" id="MaterialsObj" multiple />
+
+            <div class="form-group" style="margin-left: 12%;">
+                <div class="col-md-offset-2 col-md-10">
+                    <input style="width: 60%;" type="submit" value="Add" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    }
+</div>

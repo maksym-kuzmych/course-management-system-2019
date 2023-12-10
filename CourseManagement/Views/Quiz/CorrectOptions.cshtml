@@ -1,0 +1,26 @@
+﻿@model List<CourseManagement.Models.Answer>
+
+@if (Convert.ToBoolean(ViewBag.NullQuestion))
+{
+    <p style="margin-left:30px;">Add Correct Options.</p>
+}
+else
+{
+    <label style="margin-left: 15px;" class="col-md-12">Correct option(s):</label>
+    for (int i = 0; i < Model.Count; i++)
+    {
+        @Html.HiddenFor(m => Model[i].Question_Id)
+        @Html.HiddenFor(m => Model[i].IsCorrect)
+        <div class="form-group">
+            <div class="col-md-12">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                    @Html.EditorFor(model => Model[i].Label)
+                </div>
+                @Html.ValidationMessageFor(model => Model[i].Label)
+            </div>
+        </div>
+    }
+}

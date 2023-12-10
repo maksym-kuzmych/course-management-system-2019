@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "ShowResult";
+}
+
+<div class="forms" style="margin-top:25px;">
+    <h2 style="margin-top:25px;">Quiz result</h2>
+    <div class="form-horizontal">
+        <h3 style="text-align:center">Your result: @ViewBag.Mark from @ViewBag.QuestionsCount (@ViewBag.Percent%)</h3>
+        @if (ViewBag.Percent < 50)
+        {
+            <h3 style="text-align:center">
+                Bad result =( You should improve your knowledge and skills.
+            </h3>
+        }
+        else
+        {
+            <h3 style="text-align:center">
+                Good result! Keep up the good work!
+            </h3>
+        }
+        <a style="margin-left: 41%; margin-bottom: 10px;" href="@Url.Action("ViewCourse", "Course", new { id = ViewBag.CourseID })" class="btn btn-success">Back to the course</a>
+    </div>
+</div>
+

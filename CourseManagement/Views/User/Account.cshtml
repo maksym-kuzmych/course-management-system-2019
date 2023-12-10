@@ -1,0 +1,82 @@
+﻿@model CourseManagement.Models.User
+
+@{
+    ViewBag.Title = "Account";
+}
+
+<div class="forms" style="margin-top:25px;">
+    <h2 style="margin-top:25px;">User Account</h2>
+    @using (Html.BeginForm("Account", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <div class="user-photo">
+                <img src="@Model.Photo" />
+            </div>
+            <div class="form-group">
+                <div class="col-md-12" style="margin-left:36%;">
+                    @Html.TextBoxFor(m => m.PhotoObj, new { type = "file", @Value = Model.Photo })
+                    @Html.ValidationMessageFor(model => model.PhotoObj)
+                </div>
+            </div>
+            @Html.HiddenFor(x => x.UserId)
+            @Html.HiddenFor(x => x.Password)
+            @Html.HiddenFor(x => x.ConfirmPassword)
+            @Html.HiddenFor(x => x.IsEmailVerified)
+            @Html.HiddenFor(x => x.Photo)
+            @Html.HiddenFor(x => x.IsAdmin)
+            @Html.HiddenFor(x => x.isLecturer)
+            @Html.HiddenFor(x => x.isStudent)
+            @Html.HiddenFor(x => x.ActivationCode)
+            <div class="form-group">
+                <label style="margin-left: 30px;" for="FullName" class="col-md-12">Full Name:</label>
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fas fa-user-circle"></i>
+                        </span>
+                        @Html.EditorFor(model => model.FullName, new { @Value = Model.FullName })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.FullName)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label style="margin-left: 30px;" for="EmailId" class="col-md-12">Email:</label>
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        @Html.EditorFor(model => model.EmailId, new { @Value = Model.EmailId })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.EmailId)
+                    @Html.ValidationMessage("EmailExist")
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label style="margin-left: 30px;" for="DateOfBirth" class="col-md-12">Birth date:</label>
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="far fa-calendar-alt"></i>
+                        </span>
+                        @Html.EditorFor(model => model.DateOfBirth, new { @Value = Model.DateOfBirth })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.DateOfBirth)
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-left: 12%;">
+                <div class="col-md-offset-2 col-md-10">
+                    <input style="width: 60%;" type="submit" value="Change Data" class="btn btn-primary" />
+                </div>
+            </div>
+            <div style="margin-left: 33px; padding-bottom:20px;">
+                @Html.ActionLink("Change Password", "ForgotPassword", "User")
+            </div>
+        </div>
+    }
+</div>

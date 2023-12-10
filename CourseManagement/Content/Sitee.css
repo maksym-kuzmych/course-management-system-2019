@@ -1,0 +1,706 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    background: url(/Content/light-blue-scratone.png);
+    min-height: 80%;
+}
+
+header {
+    background: url(/Content/abstract1.jpg);
+    width: 100%;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo {
+    position: relative;
+    top: 30%;
+    left: 30%;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px black;
+}
+
+.menu-bar * {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #2f3542;
+    font-family: sans-serif;
+    font: Arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu-bar ul, ol {
+    list-style: none;
+}
+
+.menu-bar > ul {
+    display: flex;
+}
+
+    .menu-bar > ul li a {
+        display: block;
+        padding: 15px 25px 15px 25px;
+    }
+
+.menu-bar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+    .menu-bar > ul li a:hover {
+        text-decoration: none;
+        color: white;
+        background-color: #00b894;
+        box-shadow: 1px 5px 18px -5px black;
+        transition: all 0.3s ease;
+    }
+
+    .menu-bar > ul li {
+        position: relative;
+    }
+
+.search-box {
+    background: white;
+    height: 50px;
+    border-radius: 45px;
+}
+
+    .search-box:hover > .search-txt {
+        width: 240px;
+        padding: 0px 6px 0px;
+    }
+
+    .search-box:hover > .search-btn {
+        background: #2f3542;
+        background-color: #2f3542;
+    }
+
+.search-btn:hover i {
+    color: white;
+    transition: 0.2s ease;
+}
+
+.search-btn {
+    color: #00b894;
+    float: right;
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    background: #2f3542;
+    display: flex;
+    transition: 0.4s;
+}
+
+    .search-btn * {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .search-btn i {
+        position: relative;
+        color: #00b894;
+        margin-left: -10.5px;
+        font-size: 22px;
+        background-color: #2f3542;
+    }
+
+.search-txt {
+    border: none;
+    background: white;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 14px;
+    transition: 0.4s;
+    line-height: 50px;
+    width: 0px;
+    color: black;
+}
+
+footer {
+    background-color: black;
+    text-decoration: none;
+}
+
+.info {
+    min-height: 170px;
+    width: 23%;
+    margin-top: 30px;
+    padding-left: 20px;
+    vertical-align: top;
+    border-right: 1px solid darkgrey;
+    display: inline-block;
+}
+
+    .info:last-child {
+        border-right: none;
+    }
+
+.info-block {
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+    height: 240px;
+    width: 100%;
+}
+
+    .info-block p {
+        padding: 5px;
+        font-family: sans-serif;
+        color: floralwhite;
+        text-transform: uppercase;
+    }
+
+    .info-block i {
+        padding-right: 10px;
+        color: #00b894;
+    }
+
+.info a {
+    color: rgb(87,119,126);
+    padding: 5px;
+    font-family: sans-serif;
+    display: block;
+    text-decoration: none;
+}
+
+.info .choose:hover {
+    color: white;
+}
+
+.credits {
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 15px;
+    vertical-align: top;
+    color: rgb(87,119,126);
+    font-family: sans-serif;
+}
+
+.mailinp {
+    position: relative;
+    top: 10px;
+    left: 6px;
+}
+
+    .mailinp input[type="text"] {
+        height: 40px;
+        width: 200px;
+        border: none;
+        float: left;
+    }
+
+i.fa-paper-plane {
+    line-height: 35px;
+    color: white;
+}
+
+.mailinp input[type="submit"] {
+    background-image: url(/Content/plane.png);
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background-color: #00b894;
+    border: none;
+    border: 1px solid #00b894;
+}
+
+    .mailinp input[type="submit"]:hover {
+        background-color: black;
+        border: 1px solid white;
+        transition: 0.4s ease;
+    }
+
+.networks {
+    display: inline;
+    position: relative;
+    top: 20px;
+    left: 6px;
+}
+
+    .networks i {
+        font-size: 17px;
+        color: rgb(87,119,126);
+    }
+
+        .networks i:hover {
+            cursor: pointer;
+            color: #00b894;
+            transition: all 0.2s ease;
+        }
+
+.forms {
+    background-color: aliceblue;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 80px;
+}
+
+    .forms h2 {
+        margin-top: 74px;
+        text-align: center;
+    }
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    position: absolute;
+    top: 250px;
+    left: 45%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.field-validation-error {
+    margin-left: 30px;
+    color: tomato;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-left: 30px;
+}
+
+    .input-group i {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        height: 35px;
+        width: 98%;
+    }
+
+.input-validation-error {
+    border: 1px solid red;
+    background-color: #ffcccc;
+}
+
+
+
+/*1111111111111*/
+
+.course-preview {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.course-photo {
+    display: block;
+    height: 200px;
+    width: 200px;
+    vertical-align: central;
+}
+
+.course-name {
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #eee;
+}
+
+.course-preview:hover .course-name {
+    opacity: 1;
+}
+.inner-title {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 170px;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    text-align: center;
+}
+.inner-description {
+    color: white;
+    width: 150px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 12px;
+    text-align:justify;
+}
+.overlay-fade {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00b1ba;
+}
+
+.course-preview:hover .overlay-fade {
+    width: 100%;
+    border-radius: 10px;
+}
+/*111111111111111111 */
+
+
+
+
+
+
+
+.user-photo {
+    margin: 0 auto;
+    border-radius: 4px;
+    justify-content: center;
+    height: 300px;
+    width: 280px;
+    border: 3px solid #2980b9;
+}
+
+    .user-photo img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+.user-photo-div {
+    float: left;
+}
+
+.course-lecture-actions {
+    margin-top: 10px;
+    width: 190px;
+    border-radius: 10px;
+    height: 140px;
+    background-color: white;
+    float: left;
+}
+
+    .course-lecture-actions * {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: sans-serif;
+        background-color: white;
+    }
+
+
+
+    .course-lecture-actions > div {
+        border-radius: 10px 10px 0px 0px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        height: 30px;
+        font-weight: bold;
+        border-bottom: 2px solid lightgray;
+        text-transform: uppercase;
+    }
+
+.links-groups > ul {
+    list-style: none;
+}
+
+    .links-groups > ul li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /*padding-left: 15px;*/
+    }
+
+        .links-groups > ul li > a:hover {
+            cursor: pointer;
+            color: #00b894;
+        }
+
+        .links-groups > ul li:first-child {
+            margin-top: 10px;
+        }
+
+        .links-groups > ul li > form button {
+            width: 160px;
+        }
+
+.lesson-container {
+    height: 70px;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 6px;
+    background: #16a085;
+    margin-bottom: 10px;
+}
+
+.lesson-name {
+    font-family: sans-serif;
+    font: Calibri;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+    top: 25%;
+}
+
+.lesson-container:hover {
+    box-shadow: 1px 1px #53ea93, 2px 2px #53ea93, 3px 3px #53ea93, 4px 4px #53ea93, 5px 5px #53ea93, 6px 6px #53ea93, 7px 7px #53ea93;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+    transition: 0.3s all ease;
+}
+
+.button-question-bar * {
+    text-decoration: none;
+}
+
+.button-question-bar ul, ol {
+    list-style: none;
+}
+
+.button-question-bar > ul {
+    display: flex;
+}
+
+    .button-question-bar > ul li button {
+        display: block;
+        /*margin-left: 32px;
+    margin-bottom: 10px;*/
+        margin-right: 10px;
+    }
+
+.under_menu {
+    position: relative;
+    top: 20px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+}
+
+    .under_menu a {
+        padding-left: 45px;
+        padding-right: 45px;
+        border-right: 1px solid black;
+        color: black;
+        font-family: sans-serif;
+        font: Arial;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        .under_menu a:last-child {
+            border-right: none;
+        }
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-left: 120px;
+}
+
+.text {
+    position: relative;
+    height: 50px;
+    font-size: 0.8em;
+    bottom: 0;
+    padding: 0.5px 20px 0px 20px;
+    margin-top: -50px;
+    overflow: hidden;
+    background-color: rgba(54,44,48,0.6);
+    color: #fcfcfc;
+    text-shadow: 0px 1px 1px #9d9d9d;
+    font-weight:  normal;
+    font-size: 30px;
+    border-radius: 4px;
+    width: 90%;
+}
+
+.number-text {
+    position: absolute;
+    top: 0;
+    padding: 8px 162px;
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 100px
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px;
+    }
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container-test {
+    /*height: 250px;
+    width: 480px;*/
+    /*border: 1px solid black;*/
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.number-container {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 90px;
+    width: 105px;
+    background: #c8d6e5;
+    border: 1px solid #2e86de;
+    border-radius: 3px;
+}
+
+.number-texting {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.number-text span {
+    color: #222f3e;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.question-container {
+    margin-top: 10px;
+    margin-left: 5px;
+    /*height: 220px;*/
+    width: 88%;
+    background: #0abde3;
+    border: 1px solid #2e86de;
+    border-radius: 3px;
+}
+
+.question {
+    margin-top: 10px;
+    padding-left: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.choose-variant {
+    padding-left: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.answers {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    border: 1px solid #2e86de;
+    border-radius: 3px;
+    font-size: 17px;
+    font-family: sans-serif;
+    list-style: none;
+    background: #67e6dc;
+}
+
+    .answers * {
+        margin-left: 10px;
+    }
+
+.counter {
+    background: white;
+    height: 50px;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+    .counter span {
+        position: relative;
+        top: 13px;
+        left: 5px;
+        color: #222f3e;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+.course-lecturer-name{
+    position: absolute;
+    top: 246px;
+    right: 110px;
+    background: white;
+    height: 40px;
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+.course-lecturer-name span{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    font-family: sans-serif;
+    font: Calibri;
+    font-size: 18px;
+    font-weight: bold;
+}

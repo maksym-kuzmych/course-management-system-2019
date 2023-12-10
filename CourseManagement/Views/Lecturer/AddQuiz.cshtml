@@ -1,0 +1,64 @@
+﻿@model CourseManagement.Models.Quiz
+
+@{
+    ViewBag.Title = "AddQuiz";
+}
+
+<div class="forms" style="margin-top:25px;">
+    <h2 style="margin-top:25px;">Create new quiz</h2>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m => m.TopicId)
+        @Html.HiddenFor(m => m.QuizId)
+        @Html.HiddenFor(m => m.IsActive)
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label style="margin-left: 30px;" for="Name" class="col-md-12">Quiz Name:</label>
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fas fa-font"></i>
+                        </span>
+                        @Html.EditorFor(model => model.Name)
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Name)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label style="margin-left: 30px;" for="Description" class="col-md-12">Description:</label>
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fas fa-file-signature"></i>
+                        </span>
+                        @Html.EditorFor(model => model.Description)
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label style="margin-left: 30px;" for="DurationInMinutes" class="col-md-12">Duration:</label>
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fas fa-hourglass-start"></i>
+                        </span>
+                        @Html.EditorFor(model => model.DurationInMinutes)
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-left: 12%;">
+                <div class="col-md-offset-2 col-md-10">
+                    <input style="width: 60%;" type="submit" value="Save quiz and start adding questions" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+@section Scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}

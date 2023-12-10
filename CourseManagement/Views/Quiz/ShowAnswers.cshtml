@@ -1,0 +1,22 @@
+﻿@model List<CourseManagement.Models.Answer>
+
+@if (ViewBag.AnswersCount == 1)
+{
+    <p class="choose-variant">Choose one correct answer:</p>
+    <ul class="answers">
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <li><p><input class="radio-input" type="radio" name="@Model[i].Question_Id" value="@Model[i].Label"/> @Model[i].Label</p></li>
+        }
+    </ul>
+}
+else
+{
+    <p class="choose-variant">Choose one or several correct answers:</p>
+    <ul class="answers">
+        @for (int i = 0; i < Model.Count; i++)
+        {
+        <li><p style="margin-left: 5px;"><input class="checkbox-input" type="checkbox" value="@Model[i].Label" name="@Model[i].Question_Id"/> @Model[i].Label</p></li>
+        }
+    </ul>
+}

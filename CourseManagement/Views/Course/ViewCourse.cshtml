@@ -1,0 +1,55 @@
+﻿@model CourseManagement.Models.Course
+
+@{
+    ViewBag.Title = "ViewCourse";
+}
+
+<center><h2>@Model.Name</h2></center>
+<div class="course-lecturer-name">
+    <span>Course lecturer: @ViewBag.Lecturer_Name</span>
+</div>
+<h3>@Model.Description</h3>
+<div>
+    @{Html.RenderAction("ShowLessons", "Lecturer", Model.CourseId);}
+</div>
+@if (ViewBag.Status == "lecturer")
+{
+    if (Convert.ToBoolean(ViewBag.CourseLecturer))
+    {
+        <div class="course-lecture-actions">
+            <div>Actions</div>
+            <nav class="links-groups">
+                <ul>
+                    <li>@Html.ActionLink("Add lesson", "AddLesson", "Lecturer", new { id = Model.CourseId }, null)</li>
+                    <li>@Html.ActionLink("View subscribers", "ViewSubscribers", "Lecturer", new { Course_id = Model.CourseId }, null)</li>
+                    <li>@Html.ActionLink("Delete course", "DeleteCourse", new { Course_id = Model.CourseId }, null)</li>
+                </ul>
+            </nav>
+        </div>
+    }
+}
+else if (ViewBag.Status == "student")
+{
+    using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m => m.CourseId)
+        @Html.HiddenFor(m => m.Name)
+        if (Convert.ToBoolean(ViewBag.Subscribe))
+        {
+            <center>
+                <div class="form-group">
+                    <input style="width: 15%;" type="submit" value="Subscribe" class="btn btn-success" />
+                </div>
+            </center>
+        }
+        else
+        {
+            <center>
+                <div class="form-group">
+                    <input style="width: 15%;" type="submit" value="Unsubscribe" class="btn btn-danger" />
+                </div>
+            </center>
+        }
+    }
+}

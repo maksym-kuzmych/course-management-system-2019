@@ -1,0 +1,88 @@
+﻿@model CourseManagement.Models.Question
+
+@{
+    ViewBag.Title = "AddQuestions";
+}
+
+<div class="forms" style="margin-top:25px; width: 65%;">
+    <h2 style="margin-top: 30px;">Adding Question</h2>
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.QuizId)
+    @Html.HiddenFor(m => m.QuestionId)
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label style="margin-left: 30px;" for="Name" class="col-md-12">Question title:</label>
+            <div class="col-md-12">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="fas fa-pen"></i>
+                    </span>
+                    @Html.EditorFor(model => model.Question1)
+                </div>
+                @Html.ValidationMessageFor(model => model.Question1)
+            </div>
+        </div>
+
+        <div id="CorrectOpt">
+            @{Html.RenderAction("CorrectOptions", "Quiz", new { question_id = Model.QuestionId });}
+        </div>
+
+        <div id="Opt">
+            @{Html.RenderAction("Options", "Quiz", new { question_id = Model.QuestionId });}
+        </div>
+
+        <nav class="button-question-bar">
+            <ul>
+                <li>
+                    <button style="width:150px;" type="submit" name="action" value="AddCorrectOption" class="btn btn-info" onclick="getAllNames()">
+                        Add correct option
+                    </button>
+                </li>
+                <li>
+                    <button style="width:100px;" type="submit" name="action" value="AddOption" class="btn btn-info" onclick="getAllNames()">
+                        Add option
+                    </button>
+                </li>
+                <li>
+                    <button style="width:250px;" type="submit" name="action" value="SaveAndAdd" class="btn btn-success" onclick="getAllNames()">
+                        Save this question and add another
+                    </button>
+                </li>
+                <li>
+                    <button style="width:160px;" type="submit" name="action" value="SaveAll" class="btn btn-primary" onclick="getAllNames()">
+                        Save all and cancel
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript">
+        const getAllNames = () => {
+            var inputed_text = document.getElementsByClassName('text-box single-line');
+            inputed_text = Array.prototype.slice.call(inputed_text).map(object => { return object.value; });
+            var question_id = $('#QuestionId').val();
+            var quiz_id = $('#QuizId').val();
+            var act = document.activeElement.getAttribute('value');
+            $.ajax({
+                type: "POST",
+                url: '/Lecturer/AddQuestions',
+                data: {
+                    quest_id: question_id,
+                    qz_id: quiz_id,
+                    action: act,
+                    allNames: inputed_text
+                },
+                dataType: 'json',
+                traditional: true,
+                success: function (response) {
+                    window.location.href = response.redirectToUrl;
+                }
+            });
+        }
+    </script>
+}

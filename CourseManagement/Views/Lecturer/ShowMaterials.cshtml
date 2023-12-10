@@ -1,0 +1,41 @@
+﻿@model List<CourseManagement.Models.Material>
+
+
+@if (Model.Count != 0)
+{
+    <nav class="links-groups">
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li><a href="@Url.Action("Download", new { path = item.Path, filename = item.Name})" style="text-decoration:none;">@item.Name</a></li>
+            }
+            @if (Convert.ToBoolean(ViewBag.Status))
+            {
+                <li>
+                    <form action="@Url.Action("AddMaterial",  new { id = Convert.ToInt32(ViewBag.TopicId) })">
+                        <button type="submit" class="btn btn-success">
+                            Add materials
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form action="@Url.Action("DeleteMaterial",  new { id = Convert.ToInt32(ViewBag.TopicId) })">
+                        <button type="submit" class="btn btn-danger">
+                            Delete material(s)
+                        </button>
+                    </form>
+                </li>
+            }
+        </ul>
+    </nav>
+}
+else if (Convert.ToBoolean(ViewBag.Status))
+{
+    <p>This lesson has no materials. For adding materials go @Html.ActionLink("here.", "AddMaterial", new { id = Convert.ToInt32(ViewBag.TopicId) })</p>
+}
+else
+{
+    <p>
+        This lesson has no materials.
+    </p>
+}

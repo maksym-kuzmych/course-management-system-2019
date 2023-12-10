@@ -1,0 +1,97 @@
+﻿@model List<CourseManagement.Models.Question>
+
+@{
+    ViewBag.Title = "TestProcess";
+    var endTime = DateTime.UtcNow.AddSeconds(ViewBag.Duration);
+    //var endTime = DateTime.UtcNow.AddSeconds(200);
+    var timeRemaining = TimeSpan.FromTicks(endTime.Ticks - DateTime.UtcNow.Ticks).TotalSeconds.ToString("#");
+    int quizz_id = Model.FirstOrDefault().QuizId;
+}
+
+<center><h2>@ViewBag.QuizName</h2></center>
+<div class="counter">
+    <span>Time remaining: </span><span id="minRemaining"></span><span>:</span><span id="secRemaining"></span>
+</div>
+@for (int i = 0; i < Model.Count; i++)
+{
+    <div class="container-test">
+        <div class="number-container">
+            <div class="number-texting">
+                <span>Question №<strong>@(i + 1)</strong></span>
+                <span style="font-size: 13px;">From @Model.Count</span>
+            </div>
+        </div>
+        <div class="question-container">
+            <p class="question">@Model[i].Question1</p>
+            @{Html.RenderAction("ShowAnswers", new { question_id = Model[i].QuestionId });}
+        </div>
+    </div>
+}
+<center>
+    <button class="btn btn-success" onclick="SaveResults()">
+        Send all and check result
+    </button>
+</center>
+
+@section Scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript">
+        var remSeconds = @timeRemaining;
+        var secondsCounter = remSeconds % 60;
+
+        function formatNumber(number) {
+            if (number < 10) {
+                return '0' + number;
+            }
+            else {
+                return '' + number;
+            }
+        }
+        function startTick() {
+            document.getElementById('secRemaining').innerText = formatNumber(secondsCounter);
+            document.getElementById('minRemaining').innerText = formatNumber(parseInt(remSeconds/60));
+            var _tick = setInterval(function () {
+                if (remSeconds > 0) {
+                    remSeconds = remSeconds - 1;
+                    secondsCounter = secondsCounter - 1;
+                    document.getElementById('secRemaining').innerText = formatNumber(secondsCounter);
+                    document.getElementById('minRemaining').innerText = formatNumber(parseInt(remSeconds / 60));
+                    if (secondsCounter == 0) {
+                        secondsCounter = 60;
+                    }
+                }
+                else {
+                    clearInterval(_tick);
+                    SaveResults();
+                }
+            }, 1000)
+        }
+    startTick();
+
+            const SaveResults = () => {
+            var input_radio = document.getElementsByClassName('radio-input');
+            input_radio = Array.prototype.slice.call(input_radio).filter(object => object.checked);
+            input_radio = input_radio.map(object => { return object.value + "~" + object.name; });
+            var input_checkbox = document.getElementsByClassName('checkbox-input');
+            input_checkbox = Array.prototype.slice.call(input_checkbox).filter(object => object.checked);
+            input_checkbox = input_checkbox.map(object => { return object.value + "~" + object.name; });
+            var quiz_id = @quizz_id;
+            $.ajax({
+                type: "POST",
+                url: '/Quiz/SaveResults',
+                data: {
+                    qz_id: quiz_id,
+                    radio: input_radio,
+                    check: input_checkbox
+                },
+                dataType: 'json',
+                traditional: true,
+                success: function (response) {
+                    window.location.href = response.redirectToUrl;
+                }
+            });
+        }
+    </script>
+}

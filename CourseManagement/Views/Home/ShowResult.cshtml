@@ -1,0 +1,18 @@
+﻿@model CourseManagement.Models.Course
+
+@{
+    ViewBag.Title = "ShowResult";
+}
+
+<center>
+    <h2>Search Result</h2>
+</center>
+
+<div class="course-preview" onclick="location.href = '/Course/ViewCourse/@Model.CourseId'">
+    <img src="@Model.Image" class="course-photo" />
+    <div class="course-name overlay-fade">
+        <div class="inner-title">@Model.Name</div>
+        <div class="inner-description">@Model.Description</div>
+    </div>
+</div>
+

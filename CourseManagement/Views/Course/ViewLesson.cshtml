@@ -1,0 +1,22 @@
+﻿@model CourseManagement.Models.Topic
+
+@{
+    ViewBag.Title = "ViewLesson";
+}
+
+<h2>Lesson №@Model.TopicNumber: @Model.Name</h2>
+@if (ViewBag.Status == "subscriber" || ViewBag.Status == "course_lecturer")
+{
+    <h3>Materials: </h3>
+    <div>
+        @{Html.RenderAction("ShowMaterials", "Lecturer", new { topic_id = Model.TopicId, course_id = Convert.ToInt32(ViewBag.CourseId) });}
+    </div>
+    <h3>Thematic test: </h3>
+    <div>
+        @{Html.RenderAction("ShowQuiz", "Lecturer", new { topic_id = Model.TopicId, course_id = Convert.ToInt32(ViewBag.CourseId) });}
+    </div>
+}
+else
+{
+    <p>You don't have permissions for viewing materials of this lesson</p>
+}

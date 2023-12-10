@@ -1,0 +1,57 @@
+﻿@model CourseManagement.Models.Course
+
+@{
+    ViewBag.Title = "CreateCourse";
+}
+
+<div class="forms" style="margin-top:25px;">
+    <h2 style="margin-top:25px;">Create new course</h2>
+    @using (Html.BeginForm("CreateCourse", "Course", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label style="margin-left: 30px;" for="Name" class="col-md-12">Course Name:</label>
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fas fa-font"></i>
+                        </span>
+                        @Html.EditorFor(model => model.Name)
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Name)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label style="margin-left: 30px;" for="Description" class="col-md-12">Description:</label>
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fas fa-file-signature"></i>
+                        </span>
+                        @Html.EditorFor(model => model.Description)
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-left: 15px;">
+                <label for="ImageObj" class="col-md-12">Image:</label>
+                <div class="col-md-12">
+                    @Html.TextBoxFor(model => model.ImageObj, new { type = "file" })
+                    @Html.ValidationMessageFor(model => model.ImageObj)
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-left: 12%;">
+                <div class="col-md-offset-2 col-md-10">
+                    <input style="width: 60%;" type="submit" value="Create course" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+@section Scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}

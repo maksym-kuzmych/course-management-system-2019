@@ -1,0 +1,16 @@
+﻿@model List<CourseManagement.Models.Topic>
+
+
+@if (Model.Count != 0)
+{
+    foreach (var item in Model)
+    {
+        <div class="lesson-container" onclick="location.href = '@Url.Action("ViewLesson", "Course", new { lesson_id = item.TopicId, course_id = item.CourseId })'">
+            <span class="lesson-name">Lesson №@item.TopicNumber: @item.Name</span>
+        </div>
+    }
+}
+else
+{
+    <p>This course has no lessons.</p>
+}

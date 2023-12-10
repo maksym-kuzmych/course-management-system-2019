@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище MyDatabaseModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Answers">
+          <Key>
+            <PropertyRef Name="Answer_Id" />
+          </Key>
+          <Property Name="Answer_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Question_Id" Type="int" Nullable="false" />
+          <Property Name="Label" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="Points" Type="float" Nullable="false" />
+          <Property Name="IsCorrect" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Course">
+          <Key>
+            <PropertyRef Name="CourseId" />
+          </Key>
+          <Property Name="CourseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LecturerId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Image" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CreatedCourse">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="CoursesId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="CoursesId" Type="int" Nullable="false" />
+          <Property Name="CourseName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Material">
+          <Key>
+            <PropertyRef Name="MaterialId" />
+          </Key>
+          <Property Name="TopicId" Type="int" Nullable="false" />
+          <Property Name="MaterialId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Path" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Questions">
+          <Key>
+            <PropertyRef Name="QuestionId" />
+          </Key>
+          <Property Name="QuizId" Type="int" Nullable="false" />
+          <Property Name="QuestionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Question" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Points" Type="float" Nullable="false" />
+          <Property Name="QuestionNumber" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Quiz">
+          <Key>
+            <PropertyRef Name="QuizId" />
+          </Key>
+          <Property Name="TopicId" Type="int" Nullable="false" />
+          <Property Name="QuizId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="250" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="DurationInMinutes" Type="time" Precision="7" />
+        </EntityType>
+        <EntityType Name="StudentProgress">
+          <Key>
+            <PropertyRef Name="StudentId" />
+            <PropertyRef Name="CourseId" />
+            <PropertyRef Name="QuizId" />
+          </Key>
+          <Property Name="StudentId" Type="int" Nullable="false" />
+          <Property Name="CourseId" Type="int" Nullable="false" />
+          <Property Name="QuizId" Type="int" Nullable="false" />
+          <Property Name="CourseMark" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="QuizMark" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="QuizName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="QuizPercent" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="CoursePercent" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SubscribedCourses">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="CoursesId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="CoursesId" Type="int" Nullable="false" />
+          <Property Name="CourseName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Topic">
+          <Key>
+            <PropertyRef Name="TopicId" />
+          </Key>
+          <Property Name="CourseId" Type="int" Nullable="false" />
+          <Property Name="TopicId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TopicNumber" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="EmailId" Type="nvarchar" MaxLength="254" Nullable="false" />
+          <Property Name="DateOfBirth" Type="date" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IsEmailVerified" Type="bit" Nullable="false" />
+          <Property Name="ActivationCode" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ResetPasswordCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="Photo" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsAdmin" Type="bit" Nullable="false" />
+          <Property Name="isLecturer" Type="bit" Nullable="false" />
+          <Property Name="isStudent" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Answers__Questio__55BFB948">
+          <End Role="Questions" Type="Self.Questions" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Answers" Type="Self.Answers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Questions">
+              <PropertyRef Name="QuestionId" />
+            </Principal>
+            <Dependent Role="Answers">
+              <PropertyRef Name="Question_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CreatedCo__Cours__1CBC4616">
+          <End Role="Course" Type="Self.Course" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CreatedCourse" Type="Self.CreatedCourse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseId" />
+            </Principal>
+            <Dependent Role="CreatedCourse">
+              <PropertyRef Name="CoursesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CreatedCo__UserI__1BC821DD">
+          <End Role="Users" Type="Self.Users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CreatedCourse" Type="Self.CreatedCourse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="CreatedCourse">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Material__TopicI__1AD3FDA4">
+          <End Role="Topic" Type="Self.Topic" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Material" Type="Self.Material" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Topic">
+              <PropertyRef Name="TopicId" />
+            </Principal>
+            <Dependent Role="Material">
+              <PropertyRef Name="TopicId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Questions__QuizI__1F2E9E6D">
+          <End Role="Quiz" Type="Self.Quiz" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Questions" Type="Self.Questions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Quiz">
+              <PropertyRef Name="QuizId" />
+            </Principal>
+            <Dependent Role="Questions">
+              <PropertyRef Name="QuizId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Quiz__TopicId__18EBB532">
+          <End Role="Topic" Type="Self.Topic" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Quiz" Type="Self.Quiz" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Topic">
+              <PropertyRef Name="TopicId" />
+            </Principal>
+            <Dependent Role="Quiz">
+              <PropertyRef Name="TopicId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__StudentPr__Cours__436BFEE3">
+          <End Role="Course" Type="Self.Course" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="StudentProgress" Type="Self.StudentProgress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseId" />
+            </Principal>
+            <Dependent Role="StudentProgress">
+              <PropertyRef Name="CourseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__StudentPr__QuizI__4460231C">
+          <End Role="Quiz" Type="Self.Quiz" Multiplicity="1" />
+          <End Role="StudentProgress" Type="Self.StudentProgress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Quiz">
+              <PropertyRef Name="QuizId" />
+            </Principal>
+            <Dependent Role="StudentProgress">
+              <PropertyRef Name="QuizId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__StudentPr__Stude__4277DAAA">
+          <End Role="Users" Type="Self.Users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="StudentProgress" Type="Self.StudentProgress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="StudentProgress">
+              <PropertyRef Name="StudentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Subscribe__Cours__160F4887">
+          <End Role="Course" Type="Self.Course" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SubscribedCourses" Type="Self.SubscribedCourses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseId" />
+            </Principal>
+            <Dependent Role="SubscribedCourses">
+              <PropertyRef Name="CoursesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Subscribe__UserI__151B244E">
+          <End Role="Users" Type="Self.Users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SubscribedCourses" Type="Self.SubscribedCourses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="SubscribedCourses">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Topic__CourseId__14270015">
+          <End Role="Course" Type="Self.Course" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Topic" Type="Self.Topic" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseId" />
+            </Principal>
+            <Dependent Role="Topic">
+              <PropertyRef Name="CourseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище MyDatabaseModelContainer">
+          <EntitySet Name="Answers" EntityType="Self.Answers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Course" EntityType="Self.Course" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CreatedCourse" EntityType="Self.CreatedCourse" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Material" EntityType="Self.Material" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Questions" EntityType="Self.Questions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Quiz" EntityType="Self.Quiz" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StudentProgress" EntityType="Self.StudentProgress" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SubscribedCourses" EntityType="Self.SubscribedCourses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Topic" EntityType="Self.Topic" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Answers__Questio__55BFB948" Association="Self.FK__Answers__Questio__55BFB948">
+            <End Role="Questions" EntitySet="Questions" />
+            <End Role="Answers" EntitySet="Answers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CreatedCo__Cours__1CBC4616" Association="Self.FK__CreatedCo__Cours__1CBC4616">
+            <End Role="Course" EntitySet="Course" />
+            <End Role="CreatedCourse" EntitySet="CreatedCourse" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CreatedCo__UserI__1BC821DD" Association="Self.FK__CreatedCo__UserI__1BC821DD">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="CreatedCourse" EntitySet="CreatedCourse" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Material__TopicI__1AD3FDA4" Association="Self.FK__Material__TopicI__1AD3FDA4">
+            <End Role="Topic" EntitySet="Topic" />
+            <End Role="Material" EntitySet="Material" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Questions__QuizI__1F2E9E6D" Association="Self.FK__Questions__QuizI__1F2E9E6D">
+            <End Role="Quiz" EntitySet="Quiz" />
+            <End Role="Questions" EntitySet="Questions" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Quiz__TopicId__18EBB532" Association="Self.FK__Quiz__TopicId__18EBB532">
+            <End Role="Topic" EntitySet="Topic" />
+            <End Role="Quiz" EntitySet="Quiz" />
+          </AssociationSet>
+          <AssociationSet Name="FK__StudentPr__Cours__436BFEE3" Association="Self.FK__StudentPr__Cours__436BFEE3">
+            <End Role="Course" EntitySet="Course" />
+            <End Role="StudentProgress" EntitySet="StudentProgress" />
+          </AssociationSet>
+          <AssociationSet Name="FK__StudentPr__QuizI__4460231C" Association="Self.FK__StudentPr__QuizI__4460231C">
+            <End Role="Quiz" EntitySet="Quiz" />
+            <End Role="StudentProgress" EntitySet="StudentProgress" />
+          </AssociationSet>
+          <AssociationSet Name="FK__StudentPr__Stude__4277DAAA" Association="Self.FK__StudentPr__Stude__4277DAAA">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="StudentProgress" EntitySet="StudentProgress" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Subscribe__Cours__160F4887" Association="Self.FK__Subscribe__Cours__160F4887">
+            <End Role="Course" EntitySet="Course" />
+            <End Role="SubscribedCourses" EntitySet="SubscribedCourses" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Subscribe__UserI__151B244E" Association="Self.FK__Subscribe__UserI__151B244E">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="SubscribedCourses" EntitySet="SubscribedCourses" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Topic__CourseId__14270015" Association="Self.FK__Topic__CourseId__14270015">
+            <End Role="Course" EntitySet="Course" />
+            <End Role="Topic" EntitySet="Topic" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MyDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="MyDatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Answers" EntityType="MyDatabaseModel.Answer" />
+          <EntitySet Name="Courses" EntityType="MyDatabaseModel.Course" />
+          <EntitySet Name="CreatedCourses" EntityType="MyDatabaseModel.CreatedCourse" />
+          <EntitySet Name="Materials" EntityType="MyDatabaseModel.Material" />
+          <EntitySet Name="Questions" EntityType="MyDatabaseModel.Question" />
+          <EntitySet Name="Quizs" EntityType="MyDatabaseModel.Quiz" />
+          <EntitySet Name="SubscribedCourses" EntityType="MyDatabaseModel.SubscribedCours" />
+          <EntitySet Name="Topics" EntityType="MyDatabaseModel.Topic" />
+          <EntitySet Name="Users" EntityType="MyDatabaseModel.User" />
+          <AssociationSet Name="FK__Answers__Questio__55BFB948" Association="MyDatabaseModel.FK__Answers__Questio__55BFB948">
+            <End Role="Question" EntitySet="Questions" />
+            <End Role="Answer" EntitySet="Answers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CreatedCo__Cours__1CBC4616" Association="MyDatabaseModel.FK__CreatedCo__Cours__1CBC4616">
+            <End Role="Course" EntitySet="Courses" />
+            <End Role="CreatedCourse" EntitySet="CreatedCourses" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Subscribe__Cours__160F4887" Association="MyDatabaseModel.FK__Subscribe__Cours__160F4887">
+            <End Role="Course" EntitySet="Courses" />
+            <End Role="SubscribedCours" EntitySet="SubscribedCourses" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Topic__CourseId__14270015" Association="MyDatabaseModel.FK__Topic__CourseId__14270015">
+            <End Role="Course" EntitySet="Courses" />
+            <End Role="Topic" EntitySet="Topics" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CreatedCo__UserI__1BC821DD" Association="MyDatabaseModel.FK__CreatedCo__UserI__1BC821DD">
+            <End Role="User" EntitySet="Users" />
+            <End Role="CreatedCourse" EntitySet="CreatedCourses" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Material__TopicI__1AD3FDA4" Association="MyDatabaseModel.FK__Material__TopicI__1AD3FDA4">
+            <End Role="Topic" EntitySet="Topics" />
+            <End Role="Material" EntitySet="Materials" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Questions__QuizI__1F2E9E6D" Association="MyDatabaseModel.FK__Questions__QuizI__1F2E9E6D">
+            <End Role="Quiz" EntitySet="Quizs" />
+            <End Role="Question" EntitySet="Questions" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Quiz__TopicId__18EBB532" Association="MyDatabaseModel.FK__Quiz__TopicId__18EBB532">
+            <End Role="Topic" EntitySet="Topics" />
+            <End Role="Quiz" EntitySet="Quizs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Subscribe__UserI__151B244E" Association="MyDatabaseModel.FK__Subscribe__UserI__151B244E">
+            <End Role="User" EntitySet="Users" />
+            <End Role="SubscribedCours" EntitySet="SubscribedCourses" />
+          </AssociationSet>
+          <EntitySet Name="StudentProgresses" EntityType="MyDatabaseModel.StudentProgress" />
+          <AssociationSet Name="FK__StudentPr__Cours__436BFEE3" Association="MyDatabaseModel.FK__StudentPr__Cours__436BFEE3">
+            <End Role="Course" EntitySet="Courses" />
+            <End Role="StudentProgress" EntitySet="StudentProgresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK__StudentPr__QuizI__4460231C" Association="MyDatabaseModel.FK__StudentPr__QuizI__4460231C">
+            <End Role="Quiz" EntitySet="Quizs" />
+            <End Role="StudentProgress" EntitySet="StudentProgresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK__StudentPr__Stude__4277DAAA" Association="MyDatabaseModel.FK__StudentPr__Stude__4277DAAA">
+            <End Role="User" EntitySet="Users" />
+            <End Role="StudentProgress" EntitySet="StudentProgresses" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Answer">
+          <Key>
+            <PropertyRef Name="Answer_Id" />
+          </Key>
+          <Property Name="Answer_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Question_Id" Type="Int32" Nullable="false" />
+          <Property Name="Label" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Points" Type="Double" Nullable="false" />
+          <Property Name="IsCorrect" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Question" Relationship="MyDatabaseModel.FK__Answers__Questio__55BFB948" FromRole="Answer" ToRole="Question" />
+        </EntityType>
+        <EntityType Name="Course">
+          <Key>
+            <PropertyRef Name="CourseId" />
+          </Key>
+          <Property Name="CourseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LecturerId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Image" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CreatedCourses" Relationship="MyDatabaseModel.FK__CreatedCo__Cours__1CBC4616" FromRole="Course" ToRole="CreatedCourse" />
+          <NavigationProperty Name="SubscribedCourses" Relationship="MyDatabaseModel.FK__Subscribe__Cours__160F4887" FromRole="Course" ToRole="SubscribedCours" />
+          <NavigationProperty Name="Topics" Relationship="MyDatabaseModel.FK__Topic__CourseId__14270015" FromRole="Course" ToRole="Topic" />
+          <NavigationProperty Name="StudentProgresses" Relationship="MyDatabaseModel.FK__StudentPr__Cours__436BFEE3" FromRole="Course" ToRole="StudentProgress" />
+        </EntityType>
+        <EntityType Name="CreatedCourse">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="CoursesId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="CoursesId" Type="Int32" Nullable="false" />
+          <Property Name="CourseName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Course" Relationship="MyDatabaseModel.FK__CreatedCo__Cours__1CBC4616" FromRole="CreatedCourse" ToRole="Course" />
+          <NavigationProperty Name="User" Relationship="MyDatabaseModel.FK__CreatedCo__UserI__1BC821DD" FromRole="CreatedCourse" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Material">
+          <Key>
+            <PropertyRef Name="MaterialId" />
+          </Key>
+          <Property Name="TopicId" Type="Int32" Nullable="false" />
+          <Property Name="MaterialId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Path" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Topic" Relationship="MyDatabaseModel.FK__Material__TopicI__1AD3FDA4" FromRole="Material" ToRole="Topic" />
+        </EntityType>
+        <EntityType Name="Question">
+          <Key>
+            <PropertyRef Name="QuestionId" />
+          </Key>
+          <Property Name="QuizId" Type="Int32" Nullable="false" />
+          <Property Name="QuestionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Question1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Points" Type="Double" Nullable="false" />
+          <Property Name="QuestionNumber" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Answers" Relationship="MyDatabaseModel.FK__Answers__Questio__55BFB948" FromRole="Question" ToRole="Answer" />
+          <NavigationProperty Name="Quiz" Relationship="MyDatabaseModel.FK__Questions__QuizI__1F2E9E6D" FromRole="Question" ToRole="Quiz" />
+        </EntityType>
+        <EntityType Name="Quiz">
+          <Key>
+            <PropertyRef Name="QuizId" />
+          </Key>
+          <Property Name="TopicId" Type="Int32" Nullable="false" />
+          <Property Name="QuizId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="DurationInMinutes" Type="Time" Precision="7" />
+          <NavigationProperty Name="Questions" Relationship="MyDatabaseModel.FK__Questions__QuizI__1F2E9E6D" FromRole="Quiz" ToRole="Question" />
+          <NavigationProperty Name="Topic" Relationship="MyDatabaseModel.FK__Quiz__TopicId__18EBB532" FromRole="Quiz" ToRole="Topic" />
+          <NavigationProperty Name="StudentProgresses" Relationship="MyDatabaseModel.FK__StudentPr__QuizI__4460231C" FromRole="Quiz" ToRole="StudentProgress" />
+        </EntityType>
+        <EntityType Name="SubscribedCours">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="CoursesId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="CoursesId" Type="Int32" Nullable="false" />
+          <Property Name="CourseName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Course" Relationship="MyDatabaseModel.FK__Subscribe__Cours__160F4887" FromRole="SubscribedCours" ToRole="Course" />
+          <NavigationProperty Name="User" Relationship="MyDatabaseModel.FK__Subscribe__UserI__151B244E" FromRole="SubscribedCours" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Topic">
+          <Key>
+            <PropertyRef Name="TopicId" />
+          </Key>
+          <Property Name="CourseId" Type="Int32" Nullable="false" />
+          <Property Name="TopicId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TopicNumber" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Course" Relationship="MyDatabaseModel.FK__Topic__CourseId__14270015" FromRole="Topic" ToRole="Course" />
+          <NavigationProperty Name="Materials" Relationship="MyDatabaseModel.FK__Material__TopicI__1AD3FDA4" FromRole="Topic" ToRole="Material" />
+          <NavigationProperty Name="Quizs" Relationship="MyDatabaseModel.FK__Quiz__TopicId__18EBB532" FromRole="Topic" ToRole="Quiz" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmailId" Type="String" Nullable="false" MaxLength="254" FixedLength="false" Unicode="true" />
+          <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsEmailVerified" Type="Boolean" Nullable="false" />
+          <Property Name="ActivationCode" Type="Guid" Nullable="false" />
+          <Property Name="ResetPasswordCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Photo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsAdmin" Type="Boolean" Nullable="false" />
+          <Property Name="isLecturer" Type="Boolean" Nullable="false" />
+          <Property Name="isStudent" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="CreatedCourses" Relationship="MyDatabaseModel.FK__CreatedCo__UserI__1BC821DD" FromRole="User" ToRole="CreatedCourse" />
+          <NavigationProperty Name="SubscribedCourses" Relationship="MyDatabaseModel.FK__Subscribe__UserI__151B244E" FromRole="User" ToRole="SubscribedCours" />
+          <NavigationProperty Name="StudentProgresses" Relationship="MyDatabaseModel.FK__StudentPr__Stude__4277DAAA" FromRole="User" ToRole="StudentProgress" />
+        </EntityType>
+        <Association Name="FK__Answers__Questio__55BFB948">
+          <End Type="MyDatabaseModel.Question" Role="Question" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="MyDatabaseModel.Answer" Role="Answer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Question">
+              <PropertyRef Name="QuestionId" />
+            </Principal>
+            <Dependent Role="Answer">
+              <PropertyRef Name="Question_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CreatedCo__Cours__1CBC4616">
+          <End Type="MyDatabaseModel.Course" Role="Course" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="MyDatabaseModel.CreatedCourse" Role="CreatedCourse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseId" />
+            </Principal>
+            <Dependent Role="CreatedCourse">
+              <PropertyRef Name="CoursesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Subscribe__Cours__160F4887">
+          <End Type="MyDatabaseModel.Course" Role="Course" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="MyDatabaseModel.SubscribedCours" Role="SubscribedCours" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseId" />
+            </Principal>
+            <Dependent Role="SubscribedCours">
+              <PropertyRef Name="CoursesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Topic__CourseId__14270015">
+          <End Type="MyDatabaseModel.Course" Role="Course" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="MyDatabaseModel.Topic" Role="Topic" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseId" />
+            </Principal>
+            <Dependent Role="Topic">
+              <PropertyRef Name="CourseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CreatedCo__UserI__1BC821DD">
+          <End Type="MyDatabaseModel.User" Role="User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="MyDatabaseModel.CreatedCourse" Role="CreatedCourse" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="CreatedCourse">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Material__TopicI__1AD3FDA4">
+          <End Type="MyDatabaseModel.Topic" Role="Topic" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="MyDatabaseModel.Material" Role="Material" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Topic">
+              <PropertyRef Name="TopicId" />
+            </Principal>
+            <Dependent Role="Material">
+              <PropertyRef Name="TopicId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Questions__QuizI__1F2E9E6D">
+          <End Type="MyDatabaseModel.Quiz" Role="Quiz" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="MyDatabaseModel.Question" Role="Question" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Quiz">
+              <PropertyRef Name="QuizId" />
+            </Principal>
+            <Dependent Role="Question">
+              <PropertyRef Name="QuizId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Quiz__TopicId__18EBB532">
+          <End Type="MyDatabaseModel.Topic" Role="Topic" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="MyDatabaseModel.Quiz" Role="Quiz" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Topic">
+              <PropertyRef Name="TopicId" />
+            </Principal>
+            <Dependent Role="Quiz">
+              <PropertyRef Name="TopicId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Subscribe__UserI__151B244E">
+          <End Type="MyDatabaseModel.User" Role="User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="MyDatabaseModel.SubscribedCours" Role="SubscribedCours" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="SubscribedCours">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="StudentProgress">
+          <Key>
+            <PropertyRef Name="StudentId" />
+            <PropertyRef Name="CourseId" />
+            <PropertyRef Name="QuizId" />
+          </Key>
+          <Property Name="StudentId" Type="Int32" Nullable="false" />
+          <Property Name="CourseId" Type="Int32" Nullable="false" />
+          <Property Name="QuizId" Type="Int32" Nullable="false" />
+          <Property Name="CourseMark" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="QuizMark" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="QuizName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Course" Relationship="MyDatabaseModel.FK__StudentPr__Cours__436BFEE3" FromRole="StudentProgress" ToRole="Course" />
+          <NavigationProperty Name="Quiz" Relationship="MyDatabaseModel.FK__StudentPr__QuizI__4460231C" FromRole="StudentProgress" ToRole="Quiz" />
+          <NavigationProperty Name="User" Relationship="MyDatabaseModel.FK__StudentPr__Stude__4277DAAA" FromRole="StudentProgress" ToRole="User" />
+          <Property Name="QuizPercent" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+          <Property Name="CoursePercent" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+        </EntityType>
+        <Association Name="FK__StudentPr__Cours__436BFEE3">
+          <End Type="MyDatabaseModel.Course" Role="Course" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="MyDatabaseModel.StudentProgress" Role="StudentProgress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseId" />
+            </Principal>
+            <Dependent Role="StudentProgress">
+              <PropertyRef Name="CourseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__StudentPr__QuizI__4460231C">
+          <End Type="MyDatabaseModel.Quiz" Role="Quiz" Multiplicity="1" />
+          <End Type="MyDatabaseModel.StudentProgress" Role="StudentProgress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Quiz">
+              <PropertyRef Name="QuizId" />
+            </Principal>
+            <Dependent Role="StudentProgress">
+              <PropertyRef Name="QuizId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__StudentPr__Stude__4277DAAA">
+          <End Type="MyDatabaseModel.User" Role="User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="MyDatabaseModel.StudentProgress" Role="StudentProgress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="StudentProgress">
+              <PropertyRef Name="StudentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище MyDatabaseModelContainer" CdmEntityContainer="MyDatabaseEntities">
+          <EntitySetMapping Name="Answers">
+            <EntityTypeMapping TypeName="MyDatabaseModel.Answer">
+              <MappingFragment StoreEntitySet="Answers">
+                <ScalarProperty Name="IsCorrect" ColumnName="IsCorrect" />
+                <ScalarProperty Name="Points" ColumnName="Points" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+                <ScalarProperty Name="Question_Id" ColumnName="Question_Id" />
+                <ScalarProperty Name="Answer_Id" ColumnName="Answer_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Courses">
+            <EntityTypeMapping TypeName="MyDatabaseModel.Course">
+              <MappingFragment StoreEntitySet="Course">
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="LecturerId" ColumnName="LecturerId" />
+                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CreatedCourses">
+            <EntityTypeMapping TypeName="MyDatabaseModel.CreatedCourse">
+              <MappingFragment StoreEntitySet="CreatedCourse">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+                <ScalarProperty Name="CoursesId" ColumnName="CoursesId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Materials">
+            <EntityTypeMapping TypeName="MyDatabaseModel.Material">
+              <MappingFragment StoreEntitySet="Material">
+                <ScalarProperty Name="Path" ColumnName="Path" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
+                <ScalarProperty Name="TopicId" ColumnName="TopicId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Questions">
+            <EntityTypeMapping TypeName="MyDatabaseModel.Question">
+              <MappingFragment StoreEntitySet="Questions">
+                <ScalarProperty Name="QuestionNumber" ColumnName="QuestionNumber" />
+                <ScalarProperty Name="Points" ColumnName="Points" />
+                <ScalarProperty Name="Question1" ColumnName="Question" />
+                <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+                <ScalarProperty Name="QuizId" ColumnName="QuizId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Quizs">
+            <EntityTypeMapping TypeName="MyDatabaseModel.Quiz">
+              <MappingFragment StoreEntitySet="Quiz">
+                <ScalarProperty Name="DurationInMinutes" ColumnName="DurationInMinutes" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="QuizId" ColumnName="QuizId" />
+                <ScalarProperty Name="TopicId" ColumnName="TopicId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SubscribedCourses">
+            <EntityTypeMapping TypeName="MyDatabaseModel.SubscribedCours">
+              <MappingFragment StoreEntitySet="SubscribedCourses">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+                <ScalarProperty Name="CoursesId" ColumnName="CoursesId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Topics">
+            <EntityTypeMapping TypeName="MyDatabaseModel.Topic">
+              <MappingFragment StoreEntitySet="Topic">
+                <ScalarProperty Name="TopicNumber" ColumnName="TopicNumber" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TopicId" ColumnName="TopicId" />
+                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="MyDatabaseModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="isStudent" ColumnName="isStudent" />
+                <ScalarProperty Name="isLecturer" ColumnName="isLecturer" />
+                <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="ResetPasswordCode" ColumnName="ResetPasswordCode" />
+                <ScalarProperty Name="ActivationCode" ColumnName="ActivationCode" />
+                <ScalarProperty Name="IsEmailVerified" ColumnName="IsEmailVerified" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentProgresses">
+            <EntityTypeMapping TypeName="MyDatabaseModel.StudentProgress">
+              <MappingFragment StoreEntitySet="StudentProgress">
+                <ScalarProperty Name="CoursePercent" ColumnName="CoursePercent" />
+                <ScalarProperty Name="QuizPercent" ColumnName="QuizPercent" />
+                <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+                <ScalarProperty Name="QuizMark" ColumnName="QuizMark" />
+                <ScalarProperty Name="CourseMark" ColumnName="CourseMark" />
+                <ScalarProperty Name="QuizId" ColumnName="QuizId" />
+                <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

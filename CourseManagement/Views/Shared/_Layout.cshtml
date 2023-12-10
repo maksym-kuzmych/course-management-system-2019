@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Sitee.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/fontawesome.css" rel="stylesheet" />
+    <link href="~/Content/all.css" rel="stylesheet" />
+    @RenderSection("Styles", false)
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body>
+    <header>
+        <span class="logo">course management system</span>
+    </header>
+    @{Html.RenderAction("Navbar", "Home");}
+
+    <div class="container body-content" style="margin-bottom: 40px;">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="info-block">
+            <div class="info">
+                <p>service information</p>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Kharkiv - National Aerospace University "KHAI"</a>
+                <a href="#"><i class="fas fa-phone"></i>000-000-0000 </a>
+                <a href="#"><i class="fas fa-fax"></i>123456 </a>
+                <a href="#"><i class="far fa-envelope"></i>sigmaautoresponse@gmail.com </a>
+            </div>
+            <div class="info">
+                <p>information</p>
+                @Html.ActionLink("About us", "AboutUs", "Home")
+                @Html.ActionLink("Privacy policy", "PrivacyPolicy", "Home")
+                @Html.ActionLink("Site map", "SiteMap", "Home")
+            </div>
+            <div class="info">
+                <p>extras</p>
+                @Html.ActionLink("Contact us", "ContactUs", "Home")
+            </div>
+            <div class="info">
+                <p>newsletter</p>
+                <a href="#">Subscribe to our latest news to be updated</a>
+                <form class="mailinp">
+                    <input type="text" placeholder="Enter your Email adress">
+                    <input type="submit" value="">
+                </form>
+                <div class="networks">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="credits">
+            Powered By <u>KHAI team</u> CMS - Online-courses service © 2019
+        </div>
+    </footer>
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
